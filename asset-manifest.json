@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/swasthioil-official-website/static/css/main.073c9b0a.css",
-    "main.js": "/swasthioil-official-website/static/js/main.d4013f44.js",
-    "static/js/787.db2e480b.chunk.js": "/swasthioil-official-website/static/js/787.db2e480b.chunk.js",
-    "static/media/logo.svg": "/swasthioil-official-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/swasthioil-official-website/index.html",
-    "main.073c9b0a.css.map": "/swasthioil-official-website/static/css/main.073c9b0a.css.map",
-    "main.d4013f44.js.map": "/swasthioil-official-website/static/js/main.d4013f44.js.map",
-    "787.db2e480b.chunk.js.map": "/swasthioil-official-website/static/js/787.db2e480b.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.fae36d00.js",
+    "static/js/787.db2e480b.chunk.js": "/static/js/787.db2e480b.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.fae36d00.js.map": "/static/js/main.fae36d00.js.map",
+    "787.db2e480b.chunk.js.map": "/static/js/787.db2e480b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d4013f44.js"
+    "static/js/main.fae36d00.js"
   ]
 }
