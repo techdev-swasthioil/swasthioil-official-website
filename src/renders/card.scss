@@ -1,0 +1,17 @@
+@import '../color.scss';
+@import '../assets/fonts/fonts.scss';
+
+.card_carousel {
+    position: relative;
+    flex: 1;
+    flex-direction: row;
+    z-index: 3;
+
+    .react-multi-carousel-item {
+        display: flex;
+        justify-content: center;
+        .MuiPaper-root {
+
+        }
+    }
+}
