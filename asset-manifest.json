@@ -1,16 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b1e02b5.css",
-    "main.js": "/static/js/main.1d31464f.js",
-    "static/js/787.db2e480b.chunk.js": "/static/js/787.db2e480b.chunk.js",
-    "static/media/bg1.jpeg": "/static/media/bg1.137af1e9cfaebc366d4a.jpeg",
+    "main.css": "/static/css/main.5a653f40.css",
+    "main.js": "/static/js/main.f820f0a4.js",
+    "static/media/coco3.jpg": "/static/media/coco3.1b5af783a010a620ec1c.jpg",
+    "static/media/Kateel.jpg": "/static/media/Kateel.175ebeb251e3257c5229.jpg",
+    "static/media/Skin.png": "/static/media/Skin.8cdd86d230caafd0919d.png",
+    "static/media/Gill Sans Heavy.otf": "/static/media/Gill Sans Heavy.012e3b883ea5cafac6b9.otf",
+    "static/media/Gill Sans Italic.otf": "/static/media/Gill Sans Italic.93d85806cae964784080.otf",
+    "static/media/Gill Sans.otf": "/static/media/Gill Sans.0c3ea264fff3ef2bfce7.otf",
+    "static/media/Gill Sans Heavy Italic.otf": "/static/media/Gill Sans Heavy Italic.bc23f2eb4b551b9bfad6.otf",
+    "static/media/Shelf.png": "/static/media/Shelf.83b9a0f20a60b9c0083c.png",
+    "static/media/Gill Sans Medium Italic.otf": "/static/media/Gill Sans Medium Italic.d30383b21b4159765e8f.otf",
+    "static/media/Gill Sans Bold Italic.otf": "/static/media/Gill Sans Bold Italic.e0c4baf128881e0a8c90.otf",
+    "static/media/Gill Sans Light Italic.otf": "/static/media/Gill Sans Light Italic.377d6a479641f09efb23.otf",
+    "static/media/tick.png": "/static/media/tick.7593dbf33e33208e2aa0.png",
+    "static/media/Gill Sans Bold.otf": "/static/media/Gill Sans Bold.6110e26abc5eece5ce42.otf",
+    "static/media/Gill Sans Medium.otf": "/static/media/Gill Sans Medium.6d4fc7f84156dec0ed02.otf",
+    "static/media/Gill Sans Light.otf": "/static/media/Gill Sans Light.7c646be8fc05ea0651f1.otf",
+    "static/media/Health.png": "/static/media/Health.71072e8a38ebd0b41f55.png",
+    "static/media/Hair.png": "/static/media/Hair.251b2132d5bc1d7e06bf.png",
+    "static/media/Pure.png": "/static/media/Pure.4942a898bda56158b08e.png",
+    "static/media/email.png": "/static/media/email.ae792607025658a2f454.png",
+    "static/media/location.png": "/static/media/location.846c79bc3ede2e7602f4.png",
+    "static/media/Edible.png": "/static/media/Edible.105b2e91bdea9f9c8fde.png",
+    "static/media/call.png": "/static/media/call.3daf62012076e509f133.png",
+    "static/media/GillSans Condensed Bold.otf": "/static/media/GillSans Condensed Bold.4d50d774764b7e9e91c1.otf",
+    "static/media/GillSans Condensed.otf": "/static/media/GillSans Condensed.dcde94d14abb6eb8a340.otf",
+    "static/media/Swasthioil-logo.jpeg": "/static/media/Swasthioil-logo.d626067e5a60e7b653e0.jpeg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.3b1e02b5.css.map": "/static/css/main.3b1e02b5.css.map",
-    "main.1d31464f.js.map": "/static/js/main.1d31464f.js.map",
-    "787.db2e480b.chunk.js.map": "/static/js/787.db2e480b.chunk.js.map"
+    "main.5a653f40.css.map": "/static/css/main.5a653f40.css.map",
+    "main.f820f0a4.js.map": "/static/js/main.f820f0a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b1e02b5.css",
-    "static/js/main.1d31464f.js"
+    "static/css/main.5a653f40.css",
+    "static/js/main.f820f0a4.js"
   ]
 }
