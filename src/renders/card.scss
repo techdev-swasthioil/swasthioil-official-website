@@ -10,8 +10,78 @@
     .react-multi-carousel-item {
         display: flex;
         justify-content: center;
-        .MuiPaper-root {
+        padding-top:2%;
+        padding-bottom:2%;
+        .MuiPaper-root{
+            .MuiButtonBase-root{
+                .MuiCardMedia-root{
+
+                }
+                .MuiCardContent-root{
+                    .MuiTypography-root{
+                        font-family: GillSans;
+                    }
+                }
+            }
+            .MuiCardActions-root{
+                justify-content: center;
+                .MuiButtonBase-root{
+                    background-color: $red;
+                    color: $white;
+                }
+
+            }
 
         }
+        
+    }
+    .react-multiple-carousel__arrow {
+        position: absolute;
+        outline: 0;
+        transition: all .5s;
+        border-radius: 35px;
+        z-index: 1000;
+        border: 0;
+        background: $red;
+        fill: $white;
+        min-width: 43px;
+        min-height: 43px;
+        opacity: 1;
+        cursor: pointer
+    }
+    
+    .react-multiple-carousel__arrow:hover {
+        background: $red;
+    }
+    
+    .react-multiple-carousel__arrow::before {
+        font-size: 20px;
+        color:$white;
+        display: block;
+        font-family: revicons;
+        text-align: center;
+        z-index: 2;
+        position: relative
+    }
+    
+    .react-multiple-carousel__arrow:disabled {
+        cursor: default;
+        background:$red;
+    }
+    
+    .react-multiple-carousel__arrow--left {
+        left: calc(4% + 1px)
+    }
+    
+    .react-multiple-carousel__arrow--left::before {
+        content: "\e824"
+    }
+    
+    .react-multiple-carousel__arrow--right {
+        right: calc(4% + 1px)
+    }
+    
+    .react-multiple-carousel__arrow--right::before {
+        content: "\e825"
     }
 }

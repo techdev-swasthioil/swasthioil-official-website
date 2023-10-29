@@ -1,0 +1,235 @@
+@import '../color.scss';
+@import '../assets/fonts/fonts.scss';
+
+.about_container{
+    // background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgb(115, 164, 171));
+    background-color: $white;
+    .Header{
+        display: flex;
+        justify-content: center;
+        background-color: $red;
+        // background-image: linear-gradient(to right, rgba(16, 77, 87, 0.3), rgba(16, 77, 87, 1));
+        .MuiTypography-root{
+            font-family: GillSans-Italic;
+            font-size: 2.0em;
+            color: $white;
+        }
+    }
+    .intro{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        background-color: $red_semi;
+        .MuiTypography-root{
+            text-align: center;
+            font-family: GillSans-Italic;
+            font-size: 1.4em;
+            color: $red;
+        }
+    }
+    .Our_journey{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .Oj_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .Oj_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .Our_mission{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .Om_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .Om_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .Our_vision{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .Ov_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .Ov_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .tradition{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .t_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .t_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .support{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .s_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .s_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .needs{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .n_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .n_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .join{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .j_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .j_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding:2% ;
+        .c_header{
+            display: flex;
+            // background-color: $white;
+            // justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        .c_content{
+            display: flex;
+            justify-content: center;
+            .MuiTypography-root{
+                font-family: GillSans;
+                font-size: 1.2em;
+                color: $red;
+            }
+        }
+    }
+    .conclusion{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        background-color: $red_semi;
+        // background-image: linear-gradient(to left, rgba(16,77,87,0), rgba(16,77,87,0.4));
+        .MuiTypography-root{
+            text-align: center;
+            font-family: GillSans;
+            font-size: 1.2em;
+            color: $red;
+        }
+    }
+}

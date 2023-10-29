@@ -1,0 +1,40 @@
+@import '../color.scss';
+@import '../assets/fonts/fonts.scss';
+
+.shop_container{
+    display: flex;
+    height: 500px;
+    background-color: $red_semi;
+    justify-content: center;
+    align-items: center;
+    .MuiTypography-root{
+        font-family: GillSans-Italic;
+        font-size: 1.4em;
+        color: $red;
+        @media screen and (max-width:576px) {
+            font-size: 1.2em;
+            
+        }
+    }
+    // .MuiPaper-root{
+    //     .MuiButtonBase-root{
+    //         .MuiCardMedia-root{
+
+    //         }
+    //         .MuiCardContent-root{
+    //             .MuiTypography-root{
+    //                 font-family: GillSans;
+    //             }
+    //         }
+    //     }
+    //     .MuiCardActions-root{
+    //         justify-content: center;
+    //         .MuiButtonBase-root{
+    //             background-color: $red;
+    //             color: $white;
+    //         }
+
+    //     }
+
+    // }
+}

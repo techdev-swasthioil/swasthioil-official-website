@@ -6,64 +6,211 @@
     width: 100%;
     padding: 20px;
     display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 1023px) {
+        flex-direction: column;
+    }
+
+    .left_container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        // justify-content: space-around;
+
+        @media screen and (max-width: 1023px) {
+            flex-direction: row;
+            width: 100%;
+        }
+        @media screen and (max-width: 825px) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .phone {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            background-image: linear-gradient(to right, rgba(16, 77, 87, 0.7), rgba(16, 77, 87, 1));
+            margin: 3%;
+            padding: 3%;
+            width: 60%;
+            border-radius: 10px;
+            border: solid $white 1px;
+            box-shadow: 5px 5px 15px 5px rgba(16, 77, 87, 0.8);
+            align-items: center;
+            justify-content: center;
+
+            .phone_header {
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
+            .phone_details {
+                .MuiTypography-root {
+                    font-family: GillSans;
+                    color: $white;
+                    font-size: 1.0em;
+                }
+            }
+        }
+
+        .email {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            background-image: linear-gradient(to right, rgba(16, 77, 87, 0.7), rgba(16, 77, 87, 1));
+            margin: 3%;
+            padding: 3%;
+            width: 60%;
+            border-radius: 10px;
+            border: solid $white 1px;
+            box-shadow: 5px 5px 15px 5px rgba(16, 77, 87, 0.8);
+            align-items: center;
+            justify-content: center;
+
+            .email_header {
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            .email_details {
+                .MuiTypography-root {
+                    font-family: GillSans;
+                    color: $white;
+                    font-size: 1.0em;
+                }
+            }
+        }
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            background-image: linear-gradient(to right, rgba(16, 77, 87, 0.7), rgba(16, 77, 87, 1));
+            margin: 3%;
+            padding: 3%;
+            width: 60%;
+            border-radius: 10px;
+            border: solid $white 1px;
+            box-shadow: 5px 5px 15px 5px rgba(16, 77, 87, 0.8);
+            align-items: center;
+            justify-content: center;
+
+            .address_header {
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            .address_details {
+                .MuiTypography-root {
+                    font-family: GillSans;
+                    color: $white;
+                    font-size: 1.0em;
+                }
+            }
+        }
+    }
+
     .right_container {
         display: flex;
         width: 50%;
-        float: left;
-        @media screen and (max-width: 1366px) {
-                    
-        }
-
-        @media screen and (max-width: 1279px) {
-            
-        }
 
         @media screen and (max-width: 1023px) {
-            display: block;
             width: 100%;
         }
 
-        @media screen and (max-width: 991px) {
-            display: block;
-            width: 100%;
-        }
-        @media screen and (max-width: 575px) {
-            display: block;
-            width: 100%;
-        }
         .MuiBox-root {
             width: 100%;
+            display: flex;
 
             .MuiPaper-root {
                 width: 100%;
 
+                #submitted {
+                    display: flex;
+                    justify-content: center;
+                    height: 500px;
+                    width: inherit;
+                    flex-direction: column;
+
+                    .response {
+                        display: flex;
+                        justify-content: center;
+
+                        .MuiTypography-root {
+                            font-family: GillSans;
+                            font-size: 1.4em;
+                        }
+                    }
+
+                    .img_tick {
+                        display: flex;
+                        justify-content: center;
+
+                        .tick {
+                            height: 100px;
+                            width: 100px;
+                            justify-self: center;
+
+                            @media screen and (max-width:768px) {
+                                height: 80px;
+                                width: 80px;
+                            }
+
+                            @media screen and (max-width:576px) {
+                                height: 60px;
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+
                 .MuiTypography-root {
                     .form_head {
                         .text_head {
+                            padding-top: 5%;
                             font-size: 1.8em;
                             text-align: center;
                             font-family: 'GillSans';
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 1.6em;
+                            }
+
                             @media screen and (max-width: 575px) {
-                               font-size: 1.5em;
-                               padding: 30px;
+                                font-size: 1.5em;
+                                padding: 30px;
                             }
                         }
+
                         .text_content {
                             font-size: 1.2em;
                             text-align: center;
                             font-family: 'GillSans';
+
                             @media screen and (max-width: 575px) {
                                 font-size: 1.0em;
                                 padding-bottom: 20px;
-                             }
+                            }
+
                             .MuiTypography-root {
                                 color: $light_red;
                                 text-decoration: none;
                             }
                         }
                     }
+
                     .form_fields {
                         height: 80px;
+
                         .lables {
                             display: flex;
                             float: left;
@@ -71,15 +218,19 @@
                             width: 25%;
                             padding: 10px 15px;
                             font-size: 1.2em;
-                            span{
-                                color:$light_red;
+
+                            span {
+                                color: $light_red;
                             }
                         }
 
                         .MuiFormControl-root {
                             display: flex;
                             float: left;
-                            width: 70%;
+                            width: 72%;
+                        }
+                        .error-message_msg{
+                            padding-left: 25%;
                         }
                     }
                 }
