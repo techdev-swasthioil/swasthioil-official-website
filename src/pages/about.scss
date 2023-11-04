@@ -1,234 +1,402 @@
 @import '../color.scss';
 @import '../assets/fonts/fonts.scss';
 
-.about_container{
+.about_container {
     // background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgb(115, 164, 171));
     background-color: $white;
-    .Header{
+
+    .Header {
         display: flex;
         justify-content: center;
         background-color: $red;
+
         // background-image: linear-gradient(to right, rgba(16, 77, 87, 0.3), rgba(16, 77, 87, 1));
-        .MuiTypography-root{
+        .MuiTypography-root {
             font-family: GillSans-Italic;
             font-size: 2.0em;
             color: $white;
         }
     }
-    .intro{
+
+    .intro {
         display: flex;
         justify-content: center;
         padding: 2%;
         background-color: $red_semi;
-        .MuiTypography-root{
+
+        .MuiTypography-root {
             text-align: center;
-            font-family: GillSans-Italic;
             font-size: 1.4em;
+            font-family: GillSans-Italic;
+
+            @media screen and (max-width:576px) {
+                font-size: 1.2em;
+            }
+
             color: $red;
         }
     }
-    .Our_journey{
+
+    .Our_journey {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .Oj_header{
+        padding: 2%;
+
+        .Oj_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .Oj_content{
+
+        .Oj_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .Our_mission{
+
+    .Our_mission {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .Om_header{
+        padding: 2%;
+
+        .Om_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .Om_content{
+
+        .Om_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .Our_vision{
+
+    .Our_vision {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .Ov_header{
+        padding: 2%;
+
+        .Ov_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .Ov_content{
+
+        .Ov_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .tradition{
+
+    .tradition {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .t_header{
+        padding: 2%;
+
+        .t_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .t_content{
+
+        .t_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .support{
+
+    .support {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .s_header{
+        padding: 2%;
+
+        .s_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .s_content{
+
+        .s_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .needs{
+
+    .needs {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .n_header{
+        padding: 2%;
+
+        .n_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .n_content{
+
+        .n_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .join{
+
+    .join {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .j_header{
+        padding: 2%;
+
+        .j_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .j_content{
+
+        .j_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .contact{
+
+    .contact {
         display: flex;
         flex-direction: column;
-        padding:2% ;
-        .c_header{
+        padding: 2%;
+
+        .c_header {
             display: flex;
+
             // background-color: $white;
             // justify-content: center;
-            .MuiTypography-root{
+            .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
                 color: $red;
             }
         }
-        .c_content{
+
+        .c_content {
             display: flex;
             justify-content: center;
-            .MuiTypography-root{
-                font-family: GillSans;
-                font-size: 1.2em;
+
+            .MuiTypography-root {
+                font-size: 1.4em;
+                font-family: GillSans-Italic;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.2em;
+                }
+
                 color: $red;
             }
         }
     }
-    .conclusion{
+
+    .Kateel_container {
+        padding: 2%;
+        background-color: $red_semi;
+
+        .k_title {
+            text-align: center;
+
+            .MuiTypography-root {
+                font-family: GillSans-MediumItalic;
+                font-size: 1.6em;
+                color: $red;
+
+            }
+        }
+
+        .k_description {
+            display: flex;
+            justify-content: center;
+
+            @media screen and (max-width:576px) {
+                flex-direction: column;
+            }
+
+            .k_mid {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: $white;
+                width: 33%;
+
+                @media screen and (max-width:768px) {
+                    width: 50%;
+                }
+
+                @media screen and (max-width:576px) {
+                    width: 100%;
+                }
+
+                .k_image {
+                    display: flex;
+                    justify-content: center;
+                    .k_img {
+                        display: flex;
+                        margin-bottom: 10px;
+                        width: 250px;
+                        max-height: 350px;
+                        filter: grayscale(80%);
+
+                        @media screen and (max-width:768px) {
+                            width: 190px;
+                            max-height: 240px;
+                        }
+
+                        @media screen and (max-width:576px) {
+                            width: 190px;
+                            max-height: 260px;
+                        }
+                    }
+                }
+
+                .MuiTypography-root {
+                    display: flex;
+                    width: 100%;
+                    font-size: 1.0em;
+                    justify-content: center;
+                    font-family: GillSans-MediumItalic;
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .conclusion {
         display: flex;
         justify-content: center;
         padding: 2%;
         background-color: $red_semi;
+
         // background-image: linear-gradient(to left, rgba(16,77,87,0), rgba(16,77,87,0.4));
-        .MuiTypography-root{
+        .MuiTypography-root {
             text-align: center;
-            font-family: GillSans;
-            font-size: 1.2em;
+            font-size: 1.4em;
+            font-family: GillSans-Italic;
+
+            @media screen and (max-width:576px) {
+                font-size: 1.2em;
+            }
+
             color: $red;
         }
     }

@@ -7,7 +7,6 @@ import Hair from '../assets/images/Hair.png';
 import Edible from '../assets/images/Edible.png';
 import Shelf from '../assets/images/Shelf.png';
 import Skin from '../assets/images/Skin.png';
-import k_img from '../assets/images/Kateel.jpg';
 import { Button, Paper, Typography } from '@mui/material';
 import { CarouselNextIcon, CarouselPrevIcon } from '../renders/icon';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -198,21 +197,6 @@ function Home() {
               <Typography><span>Skin Care</span><br />"Coconut oil offers anti-inflammatory properties, aids in maintaining skin hydration, effectively combats acne, and provides additional benefits for overall skin health."
               </Typography>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className='Kateel_container'>
-        <div className='k_title'>
-          <Typography>Our Pillar of Blessings</Typography>
-        </div>
-        <div className='k_description'>
-          <div className='k_right'>
-          </div>
-          <div className='k_mid'>
-            <img className='k_img' src={k_img} />
-            {/* Kateel Shri Durgaparameshwari */}
-          </div>
-          <div className='k_left'>
           </div>
         </div>
       </div>

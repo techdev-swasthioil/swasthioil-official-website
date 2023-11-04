@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography } from '@mui/material';
+import k_img from '../assets/images/Kateel.jpg';
 import './about.scss';
 
 function About() {
@@ -85,6 +86,19 @@ function About() {
           <Typography>
             Have questions, suggestions, or feedback? We'd love to hear from you. Feel free to reach out to us through our Contact Us page, and our friendly team will be happy to assist you.
           </Typography>
+        </div>
+      </div>
+      <div className='Kateel_container'>
+        <div className='k_title'>
+          <Typography>Our Pillar of Blessings</Typography>
+        </div>
+        <div className='k_description'>
+          <div className='k_mid'>
+            <div className='k_image'>
+              <img className='k_img' src={k_img} />
+              </div>
+            <Typography>Kateel Shri Durgaparameshwari</Typography>
+          </div>
         </div>
       </div>
       <div className='conclusion'>

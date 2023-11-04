@@ -62,7 +62,7 @@
             display: flex;
             flex-direction: column;
             height: 150px;
-            background-image: linear-gradient(to right, rgba(16, 77, 87, 0.7), rgba(16, 77, 87, 1));
+            background-image: linear-gradient(to right,#104d57c4, #104d57);
             margin: 3%;
             padding: 3%;
             width: 60%;
@@ -179,7 +179,7 @@
                             padding-top: 5%;
                             font-size: 1.8em;
                             text-align: center;
-                            font-family: 'GillSans';
+                            font-family: GillSans;
 
                             @media screen and (max-width: 991px) {
                                 font-size: 1.6em;
@@ -192,9 +192,9 @@
                         }
 
                         .text_content {
-                            font-size: 1.2em;
+                            font-size: 0.7em;
                             text-align: center;
-                            font-family: 'GillSans';
+                            font-family: GillSans;
 
                             @media screen and (max-width: 575px) {
                                 font-size: 1.0em;
