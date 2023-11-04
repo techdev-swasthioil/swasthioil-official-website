@@ -192,11 +192,14 @@
                         }
 
                         .text_content {
-                            font-size: 0.7em;
+                            font-size: 1.1em;
                             text-align: center;
                             font-family: GillSans;
-
-                            @media screen and (max-width: 575px) {
+                            @media screen and (max-width: 768px) {
+                                font-size: 1.0em;
+                                padding-bottom: 20px;
+                            }
+                            @media screen and (max-width: 576px) {
                                 font-size: 1.0em;
                                 padding-bottom: 20px;
                             }
