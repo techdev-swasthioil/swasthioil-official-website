@@ -70,7 +70,7 @@ function Footer() {
                   <ListItemText className={location.pathname === '/' ? 'active' : ''} primary="Home" />
                 </ListItem>
                 <ListItem onClick={(e) => navigate('/products')}>
-                  <ListItemText className={location.pathname === '/products' ? 'active' : ''} primary="Products" />
+                  <ListItemText className={location.pathname === '/products' ? 'active' : ''} primary="Shop" />
                 </ListItem>
                 <ListItem onClick={(e) => navigate('/about')}>
                   <ListItemText className={location.pathname === '/about' ? 'active' : ''} primary="About us" />
