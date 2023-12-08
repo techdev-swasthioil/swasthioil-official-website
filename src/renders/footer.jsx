@@ -88,7 +88,7 @@ function Footer() {
                   <ListItemText className={location.pathname === '/#' ? 'active' : ''} primary="Phone: +91 9483927749" />
                 </ListItem>
                 <ListItem >
-                  <ListItemText className={location.pathname === '/#' ? 'active' : ''} primary="E-mail: swasthioil@gmail.com" />
+                  <ListItemText className={location.pathname === '/#' ? 'active' : ''} primary="E-mail: info.swasthioil@gmail.com" />
                 </ListItem>               
               </List>
             </div>
@@ -111,7 +111,7 @@ function Footer() {
             </div>
           </div>
           <div className='copyright_container'>
-            <Typography className='copy_text'>Copyright © 2023 Swasthi Coconut Oil. All Rights Reserved</Typography>
+            {/* <Typography className='copy_text'>Copyright © 2023 Swasthi Coconut Oil. All Rights Reserved</Typography> */}
             {/* <List component="nav" aria-label="main mailbox folders">
                 <ListItem onClick={(e) => navigate('/privacy')}>
                   <ListItemText className={location.pathname === '/privacy' ? 'active' : ''} primary="Privacy" />
