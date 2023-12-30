@@ -68,7 +68,7 @@
 
                         @media screen and (max-width: 576px) {
                             height: calc(100% + 0px);
-                            transform:scale(1.5);
+                            transform: scale(1.5);
                         }
                     }
                 }
@@ -298,6 +298,7 @@
         .Coco_title {
             text-align: center;
             padding: 1%;
+
             .MuiTypography-root {
                 color: $red;
                 font-size: 2.0em;
@@ -310,61 +311,76 @@
         }
 
         .Coco_description {
-            background-image: linear-gradient(to right, rgba(16,77,87,0), rgba(16,77,87,1));
+            background-image: linear-gradient(to right, rgba(16, 77, 87, 0), rgba(16, 77, 87, 1));
             display: flex;
             flex-direction: row;
-            @media screen and (max-width:768px){
-                background-image: linear-gradient(to right, rgba(16,77,87,0), rgba(16,77,87,0.3));
+
+            @media screen and (max-width:768px) {
+                background-image: linear-gradient(to right, rgba(16, 77, 87, 0), rgba(16, 77, 87, 0.3));
                 flex-direction: column;
             }
-            @media screen and (max-width:576px){
+
+            @media screen and (max-width:576px) {
                 flex-direction: column;
             }
-            .Coco_left{
-                background-image: linear-gradient(to right, rgba(16,77,87,0), rgba(16,77,87,0));
+
+            .Coco_left {
+                background-image: linear-gradient(to right, rgba(16, 77, 87, 0), rgba(16, 77, 87, 0));
                 display: flex;
                 width: 50%;
-                padding: 10%;
-                @media screen and (max-width:768px){
+                padding: 5%;
+                text-align: justify;
+
+                @media screen and (max-width:768px) {
                     width: 100%;
                 }
-                @media screen and (max-width:576px){
+
+                @media screen and (max-width:576px) {
                     width: 100%;
                 }
-                .MuiTypography-root{
+
+                .MuiTypography-root {
                     color: $red;
                     font-size: 1.4em;
                     font-family: GillSans-Italic;
-                    @media screen and (max-width:576px){
+
+                    @media screen and (max-width:576px) {
                         font-size: 1.2em;
                     }
-                    span{
+
+                    span {
                         font-size: 1.3em;
                         font-family: GillSans-MediumItalic;
                         color: $red;
                     }
                 }
             }
-            .Coco_right{
+
+            .Coco_right {
                 display: flex;
                 width: 50%;
-                padding: 10%;
-                background-image: linear-gradient(to right, rgba(16,77,87,0.5), rgba(16,77,87,1));
-                @media screen and (max-width:768px){
+                padding: 5%;
+                background-image: linear-gradient(to right, rgba(16, 77, 87, 0.5), rgba(16, 77, 87, 1));
+                text-align: justify;
+
+                @media screen and (max-width:768px) {
                     width: 100%;
                 }
-                @media screen and (max-width:576px){
+
+                @media screen and (max-width:576px) {
                     width: 100%;
                 }
-            .MuiTypography-root{
-                color: $white;
-                font-size: 1.4em;
-                font-family: GillSans-Italic;
-                @media screen and (max-width:576px){
-                    font-size: 1.2em;
+
+                .MuiTypography-root {
+                    color: $white;
+                    font-size: 1.4em;
+                    font-family: GillSans-Italic;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 1.2em;
+                    }
                 }
             }
-        }
         }
     }
 
@@ -372,6 +388,7 @@
         .Speciality_title {
             text-align: center;
             padding: 1%;
+
             .MuiTypography-root {
                 color: $red;
                 font-size: 2.0em;
@@ -388,48 +405,60 @@
             flex-direction: row;
             justify-content: space-around;
             background-color: $white;
-            @media screen and (max-width:768px){
+
+            @media screen and (max-width:768px) {
                 flex-direction: column;
             }
-            @media screen and (max-width:576px){
+
+            @media screen and (max-width:576px) {
                 flex-direction: column;
             }
-            .sp_card{
+
+            .sp_card {
                 display: flex;
                 flex-direction: column;
                 width: 23%;
+
                 // padding: 5%;
-                @media screen and (max-width:768px){
+                @media screen and (max-width:768px) {
                     width: 100%;
                 }
-                @media screen and (max-width:576px){
+
+                @media screen and (max-width:576px) {
                     width: 100%;
                 }
-                .sp_img{
+
+                .sp_img {
                     display: flex;
                     justify-content: center;
+
                     // padding: 25%;
-                    @media screen and (max-width:576px){
-                       padding: 0;
+                    @media screen and (max-width:576px) {
+                        padding: 0;
                     }
-                    .img_vector{
+
+                    .img_vector {
                         height: 150px;
                         width: 150px;
                         padding: 5%;
+
                         @media screen and (max-width: 1440px) {
                             height: 150px;
                             width: 150px;
                         }
+
                         @media screen and (max-width: 991px) {
                             padding: 2%;
                             height: 120px;
                             width: 120px;
                         }
+
                         @media screen and (max-width: 768px) {
                             padding: 2%;
                             height: 100px;
                             width: 100px;
                         }
+
                         @media screen and (max-width: 576px) {
                             padding: 2%;
                             height: 90px;
@@ -437,21 +466,23 @@
                         }
                     }
                 }
-                .sp_content{
+
+                .sp_content {
                     display: flex;
                     text-align: center;
+
                     // padding-bottom: 10%;
-                    @media screen and (max-width: 768px) {
-                        
-                    }
-            
+                    @media screen and (max-width: 768px) {}
+
                     @media screen and (max-width: 576px) {
                         padding: 2%;
                     }
-                    .MuiTypography-root{
+
+                    .MuiTypography-root {
                         font-family: GillSans;
                         font-size: 1.1em;
-                        span{
+
+                        span {
                             font-family: GillSans-Medium;
                             font-weight: bold;
                             font-size: 1.12em;
@@ -460,53 +491,66 @@
                 }
             }
         }
+
         .Speciality_description2 {
             display: flex;
             flex-direction: row;
             justify-content: center;
             background-color: $white;
-            @media screen and (max-width:768px){
+
+            @media screen and (max-width:768px) {
                 flex-direction: column;
             }
-            @media screen and (max-width:576px){
+
+            @media screen and (max-width:576px) {
                 flex-direction: column;
             }
-            .sp_card{
+
+            .sp_card {
                 display: flex;
                 flex-direction: column;
                 width: 23%;
+
                 // padding: 5%;
-                @media screen and (max-width:768px){
+                @media screen and (max-width:768px) {
                     width: 100%;
                 }
-                @media screen and (max-width:576px){
+
+                @media screen and (max-width:576px) {
                     width: 100%;
                 }
-                .sp_img{
+
+                .sp_img {
                     display: flex;
                     justify-content: center;
+
                     // padding: 25%;
-                    @media screen and (max-width:576px){
-                       padding: 0;
+                    @media screen and (max-width:576px) {
+                        padding: 0;
                     }
-                    .img_vector{
+
+                    .img_vector {
                         height: 130px;
                         width: 130px;
                         padding: 5%;
+
                         @media screen and (max-width: 1440px) {
                             height: 130px;
                             width: 130px;
                         }
+
                         @media screen and (max-width: 991px) {
                             padding: 2%;
                             height: 120px;
                             width: 120px;
                         }
+
                         @media screen and (max-width: 768px) {
                             padding: 2%;
                             height: 100px;
                             width: 100px;
                         }
+
                         @media screen and (max-width: 576px) {
                             padding: 2%;
                             height: 90px;
@@ -514,24 +558,57 @@
                         }
                     }
                 }
-                .sp_content{
+
+                .sp_content {
                     display: flex;
                     text-align: center;
+
                     // padding-bottom: 10%;
-                    @media screen and (max-width: 768px) {
-                        
-                    }
-            
+                    @media screen and (max-width: 768px) {}
+
                     @media screen and (max-width: 576px) {
                         padding: 2%;
                     }
-                    .MuiTypography-root{
+
+                    .MuiTypography-root {
                         font-family: GillSans;
                         font-size: 1.1em;
-                        span{
+
+                        span {
                             font-family: GillSans-Medium;
                             font-weight: bold;
                             font-size: 1.12em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Testimonials {
+        position: relative;
+        flex: 1;
+        flex-direction: row;
+        z-index: 3;
+
+        .react-multi-carousel-item {
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            .MuiPaper-root {
+                .MuiButtonBase-root {
+                    .MuiCardContent-root {
+                        background-color: $red_semi;
+
+                        .MuiTypography-root {
+                            font-family: GillSans;
+                            font-size: 1.3em;
+
+                            @media screen and (max-width:576px) {
+                                font-size: 1.2em;
+                            }
                         }
                     }
                 }

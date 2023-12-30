@@ -2,6 +2,7 @@
 @import '../assets/fonts/fonts.scss';
 
 .card_carousel {
+    // padding: 0px 50px 0px 50px ;
     position: relative;
     flex: 1;
     flex-direction: row;
@@ -10,31 +11,57 @@
     .react-multi-carousel-item {
         display: flex;
         justify-content: center;
-        padding-top:2%;
-        padding-bottom:2%;
-        .MuiPaper-root{
-            .MuiButtonBase-root{
-                .MuiCardMedia-root{
+        padding-top: 2%;
+        padding-bottom: 2%;
 
+        .MuiPaper-root {
+            .MuiButtonBase-root {
+                .MuiCardMedia-root {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        height: 350px;
+                    }
                 }
-                .MuiCardContent-root{
-                    .MuiTypography-root{
+
+                .MuiCardContent-root {
+                    background-color: $red_semi;
+                    .MuiTypography-root {
                         font-family: GillSans;
+                        font-size: 1.3em;
+                        @media screen and (max-width:576px) {
+                            font-size: 1.2em;
+                        }
                     }
                 }
             }
-            .MuiCardActions-root{
+
+            .MuiCardActions-root {
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
-                .MuiButtonBase-root{
+                .MuiTypography-root {
+                    display: flex;
+                    font-family: GillSans;
+                    font-size: 1.3em;
+                    @media screen and (max-width:576px) {
+                        font-size: 1.2em;
+                    }
+                    span{
+                        text-decoration: line-through;
+                        padding-right: 15%;
+                    }
+                }
+                .MuiButtonBase-root {
+                    display: flex;
                     background-color: $red;
                     color: $white;
                 }
-
             }
-
         }
-        
     }
+
     .react-multiple-carousel__arrow {
         position: absolute;
         outline: 0;
@@ -49,38 +76,38 @@
         opacity: 1;
         cursor: pointer
     }
-    
+
     .react-multiple-carousel__arrow:hover {
         background: $red;
     }
-    
+
     .react-multiple-carousel__arrow::before {
         font-size: 20px;
-        color:$white;
+        color: $white;
         display: block;
         font-family: revicons;
         text-align: center;
         z-index: 2;
         position: relative
     }
-    
+
     .react-multiple-carousel__arrow:disabled {
         cursor: default;
-        background:$red;
+        background: $red;
     }
-    
+
     .react-multiple-carousel__arrow--left {
         left: calc(4% + 1px)
     }
-    
+
     .react-multiple-carousel__arrow--left::before {
         content: "\e824"
     }
-    
+
     .react-multiple-carousel__arrow--right {
         right: calc(4% + 1px)
     }
-    
+
     .react-multiple-carousel__arrow--right::before {
         content: "\e825"
     }

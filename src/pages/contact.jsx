@@ -4,6 +4,7 @@ import { Link, Paper } from '@mui/material';
 import { Box } from "@mui/material";
 import { useState, useEffect } from "react";
 import { TextField, Button, Typography, CircularProgress } from "@mui/material";
+import { useNavigate, useLocation, Navigate } from 'react-router-dom';
 import Tick from '../assets/images/tick.png';
 import Call from '../assets/images/call.png';
 import Email from '../assets/images/email.png';
@@ -119,7 +120,7 @@ function Contact() {
     
         return isValid;
     };
-    
+    const navigate = useNavigate();
     const [isSubmitted, setIsSubmitted] = useState(false); // Track form submission
     const [isLoading, setIsLoading] = useState(false);
 
@@ -160,7 +161,7 @@ function Contact() {
                         <img src={Email} alt='email'/>
                     </div>
                     <div className='email_details'>
-                        <Typography>swasthioil@gmail.com</Typography>
+                        <Typography>info.swasthioil@gmail.com</Typography>
                     </div>
 
                 </div>
@@ -202,7 +203,7 @@ function Contact() {
                                 <Typography sx={{ fontSize: 15, mb: 1.5 }} color="text.secondary" >
                                     <div className='form_head'>
                                         <div className='text_head'>Feedback & Complaints</div>
-                                        <div className='text_content'>Fill this form for any feedbacks or complaints.<br />If you have not yet tried our products,<br /> please shop now at <Link href="/products">SHOP</Link></div>
+                                        <div className='text_content'>Fill this form for any feedbacks or complaints.<br />If you have not yet tried our products,<br /> please shop now at <Link onClick={(e)=>{navigate('/products');}}>SHOP</Link></div>
                                     </div>
                                     <div className="form_fields">
                                         <label className="lables">Your Name</label>

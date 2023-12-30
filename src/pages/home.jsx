@@ -1,5 +1,8 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel';
+import Carousel1 from 'react-multi-carousel';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import car_img from '../assets/images/coco3.jpg';
 import Pure from '../assets/images/Pure.png';
 import Health from '../assets/images/Health.png';
@@ -8,6 +11,7 @@ import Edible from '../assets/images/Edible.png';
 import Shelf from '../assets/images/Shelf.png';
 import Skin from '../assets/images/Skin.png';
 import { Button, Paper, Typography } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 import { CarouselNextIcon, CarouselPrevIcon } from '../renders/icon';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './home.scss'
@@ -32,14 +36,33 @@ function Home() {
 
   let textItems = [
     {
-      text1: 'Donate Blood, Save Lives',
-      description: 'One donation can save upto three lives. The simple, generous act of giving blood can save lives.'
+      text1: 'Purity Redefined, Nature Perfected',
+      description: 'Experience the pure essence of life with our coconut oil – a natural choice for your well-being.'
     },
     {
-      text1: 'Days of Gratitude',
-      description: "Your birthday can be someone else's special day as well. Make your birthday memeorable by giving someone the 'Gift of Life'. Donate blood, Donate for a cause."
+      text1: 'Simple Elegance, Simply Pure',
+      description: "Experience the elegance of simplicity with our pure coconut oil – where simplicity meets the essence of pure living."
     }
   ]
+
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 1440, min: 1200 },
+      items: 3
+    },
+    desktop: {
+      breakpoint: { max: 1200, min: 756 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 756, min: 576 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 576, min: 200 },
+      items: 1
+    }
+  }
 
   function Item(props) {
     return (
@@ -84,7 +107,7 @@ function Home() {
           ))}
 
         </Carousel>
-        {/* <div className="carousel_overlay">
+        <div className="carousel_overlay">
           <Carousel
             className='overlay_carousel'
             interval={6000}
@@ -95,7 +118,7 @@ function Home() {
               <TextItem key={i} item={item}/>
             ))}
           </Carousel>
-          <Button
+          {/* <Button
 					  className="register_btn"
 					  variant="contained"
 					  onClick={(e) => {
@@ -103,8 +126,8 @@ function Home() {
 					  }}
 				  >
 					  <span>REGISTER NOW</span>
-				  </Button>
-        </div> */}
+				  </Button> */}
+        </div>
 
       </div>
       <div className='Product_container'>
@@ -122,9 +145,8 @@ function Home() {
         <div className='Coco_description'>
           <div className='Coco_left'>
             <Typography>
-               <span>Cold-Pressed Coconut Oil</span><br/>
-               What sets our cold-pressed coconut oil apart from conventionally roasted oil is its preservation of essential nutrients, natural aroma, and flavour. By avoiding the high temperatures used in the roasting process, we ensure that the oil remains rich in antioxidants, vitamins, and the pure, unadulterated goodness of coconuts. This translates into an oil that not only enhances the flavour of your dishes but also provides a myriad of health benefits.<br/>
-               {/* At Swasthi, we believe in the power of purity and tradition. Our commitment to the 'ghana' machine and the cold-pressed method reflects our dedication to quality and your well-being. We invite you to explore our range of coconut oil products and experience the difference that pure, cold-pressed oil can make in your life. */}
+              <span>Cold-Pressed Coconut Oil</span><br />
+              What sets our cold-pressed coconut oil apart from conventionally roasted oil is its preservation of essential nutrients, natural aroma, and flavour. By avoiding the high temperatures used in the roasting process, we ensure that the oil remains rich in antioxidants, vitamins, and the pure, unadulterated goodness of coconuts. This translates into an oil that not only enhances the flavour of your dishes but also provides a myriad of health benefits.<br />
             </Typography>
           </div>
           <div className='Coco_right'>
@@ -200,6 +222,43 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* <div className='Testimonials'>
+        <Carousel1
+          responsive={responsive}
+          autoPlay={true}
+          stopAutoPlayOnHover={false}
+          interval={10000}
+          animation={'slide'}
+          swipe={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          infinite={true}
+        >
+          <Card sx={{ maxWidth: 375 }} >
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit incidunt tempore modi dolore quo iste, magnam, quos facilis nihil quae nulla accusamus quod tempora alias beatae exercitationem maiores fugit!
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card sx={{ maxWidth: 375 }} >
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolores laboriosam minus, odio perferendis recusandae iste explicabo labore consequuntur, itaque id sequi quis accusamus maxime dolorum velit rem fuga molestiae!
+              </Typography>
+            </CardContent>
+
+          </Card>
+          <Card sx={{ maxWidth: 375 }} >
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus iusto iste dolore aliquid qui, saepe et modi. Corrupti ipsum pariatur autem atque ad corporis suscipit ducimus quod temporibus commodi.
+              </Typography>
+            </CardContent>
+
+          </Card>
+        </Carousel1>
+
+      </div> */}
     </div>
   )
 }
