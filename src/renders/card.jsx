@@ -44,7 +44,7 @@ function Cards() {
                 <Card sx={{ maxWidth: 345 }} >
                     <CardActionArea 
                     onClick={(e)=>{
-						navigate('/products');
+						navigate('/swasthi-0.5L-bottle');
 					}}	>
                         <CardMedia>
                             <img src={img1} alt="swasthi_oil" />
@@ -67,7 +67,7 @@ function Cards() {
                 <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea
                     onClick={(e)=>{
-						navigate('/products');
+						navigate('/swasthi-1L-bottle');
 					}}>
                         <CardMedia >
                             <img src={img2} alt="swasthi_oil" />
@@ -91,7 +91,7 @@ function Cards() {
                 <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea
                     onClick={(e)=>{
-						navigate('/products');
+						navigate('/swasthi-0.5L-pouch');
 					}}>
                         <CardMedia >
                             <img src={img4} alt="swasthi_oil" />
@@ -114,7 +114,7 @@ function Cards() {
                 <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea
                     onClick={(e)=>{
-						navigate('/products');
+						navigate('/swasthi-1L-pouch');
 					}}>
                         <CardMedia>
                             <img src={img5} alt="swasthi_oil" />
@@ -137,7 +137,7 @@ function Cards() {
                 <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea
                     onClick={(e)=>{
-						navigate('/products');
+						navigate('/swasthi-5L-can');
 					}}>
                         <CardMedia>
                             <img src={img3} alt="swasthi_oil" />

@@ -3,7 +3,7 @@
 
 .header_container{
     background-color: $white;
-    position: sticky;
+    // position: sticky;
     top: 0;
     z-index: 6;
     .MuiBox-root{
@@ -39,10 +39,10 @@
                 //     width: 27px;
                 //     max-height: 27px;
                 // }
-                @media screen and (max-width: 300px) {
-                    width: 30px;
-                    max-height: 30px;
-                }
+                // @media screen and (max-width: 300px) {
+                //     width: 30px;
+                //     max-height: 30px;
+                // }
             }
             .MuiTypography-root{
                 color: $red;
