@@ -14,24 +14,27 @@
         width: 50%;
         z-index: 3;
         position: relative;
-        
+
         @media screen and (max-width:768px) {
             width: 100%;
         }
+
         .product_carousel {
             width: 100%;
+
             .MuiPaper-root {
                 // background-color: transparent;
                 box-shadow: none;
                 border-radius: 0px;
+
                 .product_img {
                     display: flex;
                     justify-content: center;
+
                     img {
                         height: calc(100vh - 120px);
-                        @media  screen and (max-width:768px)  {
-                            // height: calc(100vh - 250px);
-                            // width: 60%;
+
+                        @media screen and (max-width:768px) {
                             height: 400px;
                         }
                     }
@@ -152,34 +155,114 @@
         display: flex;
         width: 50%;
         flex-direction: column;
-        background-color: $red_semi;
+        // background-color: $red_semi;
         padding: 5%;
+
         @media screen and (max-width:768px) {
             width: 100%;
         }
-        .product-title{
+
+        .product-title {
             display: flex;
             width: 100%;
-            .MuiTypography-root{
+
+            .MuiTypography-root {
                 font-family: GillSans;
                 font-size: 1.6em;
+
                 @media screen and (max-width:768px) {
                     font-size: 1.2em;
                 }
             }
-            span{
+
+            span {
                 color: rgb(203, 17, 17);
             }
-            .mrp{
+
+            .mrp {
                 font-size: 0.7em;
                 text-decoration: line-through;
             }
         }
-        .product-details{
+
+        .product-details {
             display: flex;
             width: 100%;
+            flex-direction: column;
+
+            .product-details-header {
+                display: flex;
+                justify-content: center;
+
+                .MuiTypography-root {
+                    font-family: GillSans;
+                    // text-decoration: underline;
+                    font-size: 1.6em;
+                    color: $red;
+
+                    @media screen and (max-width:768px) {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+            .product-details-body {
+                display: flex;
+                flex-direction: column;
+
+                .product-descript {
+                    display: flex;
+                    flex-direction: row;
+
+                    .parameter {
+                        display: flex;
+                        width: 50%;
+                        font-family: GillSans-Medium;
+                        font-size: 1.1em;
+                    }
+
+                    .values {
+                        display: flex;
+                        width: 50%;
+                        font-family: GillSans;
+                    }
+                }
+
+                img {
+                    height: 150px;
+                    width: 200px;
+                }
+
+            }
+
+            .product-details-tail {
+                display: flex;
+                flex-direction: column;
+                .about-item {
+                    display: flex;
+                    padding:5% 0% 5% 0%;
+                    .MuiTypography-root {
+                        font-family: GillSans;
+                        font-size: 1.0em;
+                        span{
+                            font-size: 1.2em;
+                            color: $red;
+                        }
+                    }
+                }
+                .caution {
+                    display: flex;
+                    .MuiTypography-root {
+                        font-family: GillSans;
+                        font-size: 1.1em;
+                        span {
+                            color: rgb(203, 17, 17);
+                        }
+                    }
+                }
+
+            }
         }
 
     }
 }
-

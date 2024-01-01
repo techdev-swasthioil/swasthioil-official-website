@@ -104,7 +104,7 @@ function Cards() {
                     </CardActionArea>
                     <CardActions>
                     <Typography variant="body2" color="text.secondary">
-                           <span>₹200 </span> ₹165
+                           <span>₹200 </span> ₹175
                         </Typography>
                         {/* <Button variant="contained">
                             ADD TO CART
@@ -127,7 +127,7 @@ function Cards() {
                     </CardActionArea>
                     <CardActions>
                     <Typography variant="body2" color="text.secondary">
-                           <span>₹400 </span> ₹340
+                           <span>₹400 </span> ₹350
                         </Typography>
                         {/* <Button variant="contained">
                             ADD TO CART

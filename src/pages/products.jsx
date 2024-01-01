@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "../renders/card";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,7 +11,8 @@ import './products.scss'
 function Products() {
     return (
         <div className="shop_container">
-            <Typography>Stay tuned for the exciting product launch!</Typography>
+            <Cards/>
+            {/* <Typography>Stay tuned for the exciting product launch!</Typography> */}
             {/* <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea>
                     <CardMedia
