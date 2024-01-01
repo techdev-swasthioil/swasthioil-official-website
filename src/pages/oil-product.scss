@@ -29,6 +29,11 @@
                     justify-content: center;
                     img {
                         height: calc(100vh - 120px);
+                        @media  screen and (max-width:768px)  {
+                            // height: calc(100vh - 250px);
+                            // width: 60%;
+                            height: 400px;
+                        }
                     }
                 }
             }
@@ -158,6 +163,9 @@
             .MuiTypography-root{
                 font-family: GillSans;
                 font-size: 1.6em;
+                @media screen and (max-width:768px) {
+                    font-size: 1.2em;
+                }
             }
             span{
                 color: rgb(203, 17, 17);
