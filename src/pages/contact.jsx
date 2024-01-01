@@ -78,7 +78,7 @@ function Contact() {
 
     const validateForm = () => {
         const newErrors = { ...formErrors };
-    
+
         // Validation for Name
         if (formData.name.trim() === "") {
             newErrors.name = "Name is required";
@@ -87,7 +87,7 @@ function Contact() {
         } else {
             newErrors.name = "";
         }
-    
+
         // Validation for Email
         if (formData.email.trim() === "") {
             newErrors.email = "Email is required";
@@ -96,7 +96,7 @@ function Contact() {
         } else {
             newErrors.email = "";
         }
-    
+
         // Validation for Phone
         if (formData.phone.trim() === "") {
             newErrors.phone = "Phone number is required";
@@ -105,19 +105,19 @@ function Contact() {
         } else {
             newErrors.phone = "";
         }
-    
+
         // Validation for Message
         if (formData.message.trim() === "") {
             newErrors.message = "Message is required";
         } else {
             newErrors.message = "";
         }
-    
+
         setFormErrors(newErrors);
-    
+
         // Check if there are no errors in the newErrors object
         const isValid = Object.values(newErrors).every((error) => error === "");
-    
+
         return isValid;
     };
     const navigate = useNavigate();
@@ -127,15 +127,15 @@ function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm()) {
-        console.log(formData);
-        setIsLoading(true);
+            console.log(formData);
+            setIsLoading(true);
 
-        // Simulate a delay (5 seconds) for the loading spinner
-        setTimeout(() => {
-            // After 5 seconds, hide the loading spinner and show the "Thank you" message
-            setIsLoading(false);
-            setIsSubmitted(true);
-        }, 5000);
+            // Simulate a delay (5 seconds) for the loading spinner
+            setTimeout(() => {
+                // After 5 seconds, hide the loading spinner and show the "Thank you" message
+                setIsLoading(false);
+                setIsSubmitted(true);
+            }, 5000);
         }
     };
     useEffect(() => {
@@ -150,7 +150,7 @@ function Contact() {
             <div className='left_container'>
                 <div className='phone'>
                     <div className='phone_header'>
-                        <img src={Call} alt='phone'/>
+                        <img src={Call} alt='phone' />
                     </div>
                     <div className='phone_details'>
                         <Typography>Phone: +91 9483927749<br />Mobile: +91 6362180682</Typography>
@@ -158,7 +158,7 @@ function Contact() {
                 </div>
                 <div className='email'>
                     <div className='email_header' >
-                        <img src={Email} alt='email'/>
+                        <img src={Email} alt='email' />
                     </div>
                     <div className='email_details'>
                         <Typography>info.swasthioil@gmail.com</Typography>
@@ -167,7 +167,7 @@ function Contact() {
                 </div>
                 <div className='address'>
                     <div className='address_header'>
-                        <img src={Loca} alt='address'/>
+                        <img src={Loca} alt='address' />
                     </div>
                     <div className='address_details'>
                         <Typography>Sri Janardhana Oil Mill, 2-54A, Sarvamangala, Pangala, Udupi district, Karnataka - 576122</Typography>
@@ -195,15 +195,19 @@ function Contact() {
                                     </Typography>
                                 </div>
                                 <div className='img_tick'>
-                                    <img className='tick' src={Tick} alt='done'/>
+                                    <img className='tick' src={Tick} alt='done' />
                                 </div>
                             </div>
                         ) : (
-                            <form id="form">
+                            <form
+                                id="form"
+                                action="https://formspree.io/f/xeqyqawn"
+                                method="POST"
+                            >
                                 <Typography sx={{ fontSize: 15, mb: 1.5 }} color="text.secondary" >
                                     <div className='form_head'>
                                         <div className='text_head'>Feedback & Complaints</div>
-                                        <div className='text_content'>Fill this form for any feedbacks or complaints.<br />If you have not yet tried our products,<br /> please shop now at <Link onClick={(e)=>{navigate('/products');}}>SHOP</Link></div>
+                                        <div className='text_content'>Fill this form for any feedbacks or complaints.<br />If you have not yet tried our products,<br /> please shop now at <Link onClick={(e) => { navigate('/products'); }}>SHOP</Link></div>
                                     </div>
                                     <div className="form_fields">
                                         <label className="lables">Your Name</label>
@@ -211,6 +215,7 @@ function Contact() {
                                             className="field"
                                             placeholder="Your Name"
                                             variant="standard"
+                                            name='name'
                                             value={formData.name}
                                             onChange={(e) => {
                                                 setFormData({ ...formData, name: e.target.value });
@@ -226,6 +231,7 @@ function Contact() {
                                             placeholder="example@domain.com"
                                             variant="standard"
                                             type="email"
+                                            name='email'
                                             value={formData.email}
                                             onChange={(e) => {
                                                 setFormData({ ...formData, email: e.target.value });
@@ -241,6 +247,7 @@ function Contact() {
                                             className="field"
                                             placeholder="9999xxxxxx"
                                             variant="standard"
+                                            name='phone'
                                             value={formData.phone}
                                             onChange={(e) => {
                                                 setFormData({ ...formData, phone: e.target.value });
@@ -256,6 +263,7 @@ function Contact() {
                                             multiline maxRows={5}
                                             placeholder="Enter your message here"
                                             variant="outlined"
+                                            name='message'
                                             value={formData.message}
                                             onChange={(e) => {
                                                 setFormData({ ...formData, message: e.target.value });
@@ -272,12 +280,16 @@ function Contact() {
                                             e.preventDefault();
                                             if (validateForm()) {
                                                 handleSubmit(e);
+                                                const form = document.getElementById('form');
+                                                form.submit();
                                             }
                                         }}
+                                        type='submit'
                                         // onClick={handleSubmit}
                                         disabled={isLoading}>
                                         {isLoading ? <CircularProgress size={24} /> : "Submit"}
                                     </Button>
+                                    {/* <input type="submit" value="send" /> */}
                                 </div>
                             </form>
                         )}
