@@ -19,7 +19,7 @@ function About() {
           <Typography>Our Journey</Typography>
         </div>
         <div className='Oj_content'>
-          <Typography>In the heart of 1968, nestled within the lush coconut groves of the Temple town Udupi, a humble yet ambitious dream was born. This dream was none other than Swasthi, a coconut oil brand that has been synonymous with purity and quality for over half a century. Since our inception, we have taken pride in carrying forward the age-old tradition of producing coconut oil using the revered rotary machine “The Ghana”.</Typography>
+          <Typography>In the heart of 1968, nestled within the lush coconut groves of the Temple town Udupi, a humble yet ambitious dream was born. This dream was none other than Swasthi, a coconut oil brand that has been synonymous with purity and quality for over half a century. Since our inception, we have taken pride in carrying forward the age-old tradition of producing coconut oil using the revered rotary machine “The gaana”.</Typography>
         </div>
       </div>
       <div className='Our_mission'>
@@ -27,7 +27,7 @@ function About() {
           <Typography>Our Mission</Typography>
         </div>
         <div className='Om_content'>
-          <Typography>At Swasthi, our mission is simple yet profound: to provide our customers with the purest and most nourishing coconut oil while preserving the rich heritage of the cold pressed 'ghana' method. We are committed to maintaining the highest quality standards, ensuring that every drop of our coconut oil retains the essence and benefits of the coconut fruit.</Typography>
+          <Typography>At Swasthi, our mission is simple yet profound: to provide our customers with the purest and most nourishing coconut oil while preserving the rich heritage of the cold pressed 'gaana' method. We are committed to maintaining the highest quality standards, ensuring that every drop of our coconut oil retains the essence and benefits of the coconut fruit.</Typography>
         </div>
       </div>
       <div className='Our_vision'>
@@ -35,16 +35,16 @@ function About() {
           <Typography>Our Vision</Typography>
         </div>
         <div className='Ov_content'>
-          <Typography>Our vision is to be a trusted companion on your journey to a healthier and happier life. We strive to spread the goodness of pure, cold-pressed coconut oil to every home. We envision a world where the knowledge and appreciation of traditional, natural methods like the 'ghana' machine are passed down through generations, fostering a deeper connection with the earth and a sustainable future.</Typography>
+          <Typography>Our vision is to be a trusted companion on your journey to a healthier and happier life. We strive to spread the goodness of pure, cold-pressed coconut oil to every home. We envision a world where the knowledge and appreciation of traditional, natural methods like the 'gaana' machine are passed down through generations, fostering a deeper connection with the earth and a sustainable future.</Typography>
         </div>
       </div>
       <div className='tradition'>
         <div className='t_header'>
-          <Typography>The 'Ghana' Method: Preserving Tradition and Purity</Typography>
+          <Typography>The 'gaana' Method: Preserving Tradition and Purity</Typography>
         </div>
         <div className='t_content'>
           <Typography>
-            We take immense pride in our commitment to preserving the traditional method of extracting coconut oil using the 'ghana' machine. This age-old practice involves grinding coconut flesh to extract oil in a slow, cold-pressed manner. The 'ghana' method, in contrast to roasting, ensures that the oil retains its full spectrum of nutrients and natural flavours.
+            We take immense pride in our commitment to preserving the traditional method of extracting coconut oil using the 'gaana' machine. This age-old practice involves grinding coconut flesh to extract oil in a slow, cold-pressed manner. The 'gaana' method, in contrast to roasting, ensures that the oil retains its full spectrum of nutrients and natural flavours.
           </Typography>
         </div>
       </div>

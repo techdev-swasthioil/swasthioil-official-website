@@ -46,12 +46,12 @@ function Footer() {
                   <Link href="https://www.facebook.com/" target='_blank'>
                     <FacebookIcon sx={{ color: "#FFFFFF" }} fontSize="medium" />
                   </Link>
-                  <Link href='https://twitter.com/' target='_blank'>
+                  {/* <Link href='https://twitter.com/' target='_blank'>
                     <TwitterIcon fontSize="medium" sx={{ color: "#FFFFFF" }} />
-                  </Link>
-                  {/* <Link href='https://in.linkedin.com/' target='_blank'>
-                    <LinkedInIcon fontSize="medium" sx={{ color: "#FFFFFF" }} />
                   </Link> */}
+                  <Link href='https://in.linkedin.com/' target='_blank'>
+                    <LinkedInIcon fontSize="medium" sx={{ color: "#FFFFFF" }} />
+                  </Link>
                   
                 </Stack>
               </div>
