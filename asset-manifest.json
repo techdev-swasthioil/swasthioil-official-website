@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.027d98b9.css",
-    "main.js": "/static/js/main.5792400c.js",
+    "main.js": "/static/js/main.d6b40029.js",
     "static/media/070A2870.png": "/static/media/070A2870.649b9b20708292de2d1e.png",
     "static/media/070A2859.png": "/static/media/070A2859.5d6db9440b0ac18692ba.png",
     "static/media/070A2835.png": "/static/media/070A2835.488ca7a808f305e0c0e5.png",
@@ -14,7 +14,6 @@
     "static/media/coco3.jpg": "/static/media/coco3.1b5af783a010a620ec1c.jpg",
     "static/media/Kateel.jpg": "/static/media/Kateel.175ebeb251e3257c5229.jpg",
     "static/media/Skin.png": "/static/media/Skin.8cdd86d230caafd0919d.png",
-    "static/media/banner.png": "/static/media/banner.4f5da8d34b36c2a6641c.png",
     "static/media/Gill Sans Heavy.otf": "/static/media/Gill Sans Heavy.012e3b883ea5cafac6b9.otf",
     "static/media/Gill Sans Italic.otf": "/static/media/Gill Sans Italic.93d85806cae964784080.otf",
     "static/media/Gill Sans.otf": "/static/media/Gill Sans.0c3ea264fff3ef2bfce7.otf",
@@ -43,10 +42,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.027d98b9.css.map": "/static/css/main.027d98b9.css.map",
-    "main.5792400c.js.map": "/static/js/main.5792400c.js.map"
+    "main.d6b40029.js.map": "/static/js/main.d6b40029.js.map"
   },
   "entrypoints": [
     "static/css/main.027d98b9.css",
-    "static/js/main.5792400c.js"
+    "static/js/main.d6b40029.js"
   ]
 }
