@@ -3,7 +3,6 @@ import Carousel from 'react-material-ui-carousel';
 import Carousel1 from 'react-multi-carousel';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import car_img from '../assets/images/banner.png';
 import car_img2 from '../assets/images/coco3.jpg';
 import Pure from '../assets/images/Pure.png';
 import Health from '../assets/images/Health.png';
