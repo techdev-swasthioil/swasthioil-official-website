@@ -45,7 +45,7 @@
                 // }
             }
             .MuiTypography-root{
-                color: $red;
+                color: $green;
                 font-size: 1.6em;
                 align-self: center;
                 padding-left: 20px;
@@ -82,7 +82,7 @@
                 }
                 .MuiListItemText-root{
                     .MuiTypography-root{
-                        color: $red;
+                        color: $green;
                         font-size: 0.9em;
                         font-family: GillSans;
                         text-align: center;
@@ -92,10 +92,10 @@
                     }
                 }
                 &.Mui-selected{
-                    background-color: $red_semi;
+                    background-color: $green_semi;
                     .MuiListItemText-root{
                         .MuiTypography-root{
-                            color: $red;
+                            color: $green;
                             font-family: GillSans-Medium;
                             text-decoration:none;
                         }
@@ -128,7 +128,7 @@
                 border-radius: 0px;
                 font-size: 0.9em;
                 font-family: GillSans-Medium;
-                color: $red;
+                color: $green;
                 text-transform: capitalize;
                 text-decoration: none;
                 @media screen and (min-width:992px) {
@@ -139,7 +139,7 @@
                 @media screen and (max-width:768px) {
                     display: contents;
                     span{
-                        color: $red;
+                        color: $green;
                         text-decoration: underline;
                     }
                 }
@@ -148,10 +148,10 @@
                 display: none;
                 background-color: $white;
                 .MuiSvgIcon-root {
-                    fill: $red;
+                    fill: $green;
                 }
                 &.drawer_open {
-                    background-color: $red;
+                    background-color: $green;
                     .MuiSvgIcon-root {
                         fill: $white;
                     }
@@ -201,17 +201,17 @@
                     min-width: 130px;
                     .MuiListItemText-root{
                         .MuiTypography-root{
-                            color: $red;
+                            color: $green;
                             font-size: 0.9em;
                             font-family: GillSans;
                             text-align: center;
                         }
                     }
                     &.Mui-selected{                
-                        background-color: $red_semi;
+                        background-color: $green_semi;
                         .MuiListItemText-root{
                             .MuiTypography-root{
-                                color: $red;
+                                color: $green;
                                 font-family: GillSans-Medium;
                             }
                         }

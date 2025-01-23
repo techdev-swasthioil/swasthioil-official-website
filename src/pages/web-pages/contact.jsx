@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 import { useState, useEffect } from "react";
 import { TextField, Button, Typography, CircularProgress } from "@mui/material";
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
-import Tick from '../assets/images/tick.png';
-import Call from '../assets/images/call.png';
-import Email from '../assets/images/email.png';
-import Loca from '../assets/images/location.png';
+import Tick from '../../assets/images/tick.png';
+import Call from '../../assets/images/call.png';
+import Email from '../../assets/images/email.png';
+import Loca from '../../assets/images/location.png';
 
 function Contact() {
     const [formData, setFormData] = useState({

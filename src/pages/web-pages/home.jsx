@@ -1,36 +1,24 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel';
-import Carousel1 from 'react-multi-carousel';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import car_img2 from '../assets/images/coco3.jpg';
-import Pure from '../assets/images/Pure.png';
-import Health from '../assets/images/Health.png';
-import Hair from '../assets/images/Hair.png';
-import Edible from '../assets/images/Edible.png';
-import Shelf from '../assets/images/Shelf.png';
-import Skin from '../assets/images/Skin.png';
-import { Button, Paper, Typography } from '@mui/material';
-import { CardActionArea, CardActions } from '@mui/material';
-import { CarouselNextIcon, CarouselPrevIcon } from '../renders/icon';
-import { useNavigate, useLocation } from 'react-router-dom';
+import car_img2 from '../../assets/images/coco3.jpg';
+import Pure from '../../assets/images/Pure.png';
+import Health from '../../assets/images/Health.png';
+import Hair from '../../assets/images/Hair.png';
+import Edible from '../../assets/images/Edible.png';
+import Shelf from '../../assets/images/Shelf.png';
+import Skin from '../../assets/images/Skin.png';
+import { Paper, Typography } from '@mui/material';
 import './home.scss'
-import Cards from '../renders/card';
+import Cards from '../../renders/card';
 
 function Home() {
 
-  const navigate = useNavigate();
-  const location = useLocation();
-
   let items = [
-    // {
-    //     bannerImg: car_img,
-    // },
     {
         bannerImg: car_img2,     
-    },
+    }
     // {
-    //   bannerImg: car_img3,
+    //     bannerImg: car_img,
     // },
   ];
 
@@ -45,30 +33,30 @@ function Home() {
     }
   ]
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 1440, min: 1200 },
-      items: 3
-    },
-    desktop: {
-      breakpoint: { max: 1200, min: 756 },
-      items: 2
-    },
-    tablet: {
-      breakpoint: { max: 756, min: 576 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 576, min: 200 },
-      items: 1
-    }
-  }
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     breakpoint: { max: 1440, min: 1200 },
+  //     items: 3
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 1200, min: 756 },
+  //     items: 2
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 756, min: 576 },
+  //     items: 2
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 576, min: 200 },
+  //     items: 1
+  //   }
+  // }
 
   function Item(props) {
     return (
       <Paper>
         <div className="banner_img">
-          <img src={props.item.bannerImg} alt="banner-image" />
+          <img src={props.item.bannerImg} alt="banner" />
         </div>
       </Paper>
     );
@@ -161,7 +149,7 @@ function Home() {
         <div className='Speciality_description1'>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Pure} />
+              <img className='img_vector' src={Pure} alt='pure'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Pure</span><br />"Swasthi guarantees that all coconut oil variants are 100% pure, completely devoid of any adulterants, fragrances, additives, preservatives, or chemicals."
@@ -171,7 +159,7 @@ function Home() {
           </div>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Health} />
+              <img className='img_vector' src={Health} alt='health'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Healthy</span><br />"Highly digestible, enhances metabolic function, supports weight management, lowers unhealthy cholesterol levels, promotes cardiovascular well-being, strengthens the immune system, and is renowned for its immunity-boosting properties."
@@ -181,7 +169,7 @@ function Home() {
           </div>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Shelf} />
+              <img className='img_vector' src={Shelf} alt='shelf life'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Long Shelf Life</span><br />"Careful selection of premium edible coconut/copra, meticulous sun drying to eliminate moisture, fine filtering, and airtight packaging guarantee an extended shelf life upto 6 months."
@@ -190,7 +178,7 @@ function Home() {
           </div>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Edible} />
+              <img className='img_vector' src={Edible} alt='edible'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Edible use</span><br />
@@ -203,7 +191,7 @@ function Home() {
         <div className='Speciality_description2'>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Hair} />
+              <img className='img_vector' src={Hair} alt='hair uses'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Hair Care</span><br />"Nurtures the skin, hydrates and conditions the hair, fortifies the roots, maintains a refreshing scalp, and is a popular choice as a hair oil, whether used as it is or blended with various additives of your choice."
@@ -213,7 +201,7 @@ function Home() {
           </div>
           <div className='sp_card'>
             <div className='sp_img'>
-              <img className='img_vector' src={Skin} />
+              <img className='img_vector' src={Skin} alt='skin care'/>
             </div>
             <div className='sp_content'>
               <Typography><span>Skin Care</span><br />"Coconut oil offers anti-inflammatory properties, aids in maintaining skin hydration, effectively combats acne, and provides additional benefits for overall skin health."

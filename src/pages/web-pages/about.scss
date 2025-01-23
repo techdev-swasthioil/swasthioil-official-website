@@ -1,5 +1,5 @@
-@import '../color.scss';
-@import '../assets/fonts/fonts.scss';
+@import '../../color.scss';
+@import '../../assets/fonts/fonts.scss';
 
 .about_container {
     // background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgb(115, 164, 171));
@@ -8,7 +8,7 @@
     .Header {
         display: flex;
         justify-content: center;
-        background-color: $red;
+        background-color: $green;
 
         // background-image: linear-gradient(to right, rgba(16, 77, 87, 0.3), rgba(16, 77, 87, 1));
         .MuiTypography-root {
@@ -22,7 +22,7 @@
         display: flex;
         justify-content: center;
         padding: 2%;
-        background-color: $red_semi;
+        background-color: $green_semi;
 
         .MuiTypography-root {
             text-align: center;
@@ -33,7 +33,7 @@
                 font-size: 1.2em;
             }
 
-            color: $red;
+            color: $green;
         }
     }
 
@@ -50,7 +50,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -66,7 +66,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -84,7 +84,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -100,7 +100,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -118,7 +118,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -134,7 +134,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -152,7 +152,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -168,7 +168,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -186,7 +186,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -202,7 +202,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -220,7 +220,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -236,7 +236,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -254,7 +254,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -270,7 +270,7 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
@@ -288,7 +288,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
             }
         }
 
@@ -304,14 +304,14 @@
                     font-size: 1.2em;
                 }
 
-                color: $red;
+                color: $green;
             }
         }
     }
 
     .Kateel_container {
         padding: 2%;
-        background-color: $red_semi;
+        background-color: $green_semi;
 
         .k_title {
             text-align: center;
@@ -319,7 +319,7 @@
             .MuiTypography-root {
                 font-family: GillSans-MediumItalic;
                 font-size: 1.6em;
-                color: $red;
+                color: $green;
 
             }
         }
@@ -375,7 +375,7 @@
                     font-size: 1.0em;
                     justify-content: center;
                     font-family: GillSans-MediumItalic;
-                    color: $red;
+                    color: $green;
                 }
             }
         }
@@ -385,7 +385,7 @@
         display: flex;
         justify-content: center;
         padding: 2%;
-        background-color: $red_semi;
+        background-color: $green_semi;
 
         // background-image: linear-gradient(to left, rgba(16,77,87,0), rgba(16,77,87,0.4));
         .MuiTypography-root {
@@ -397,7 +397,7 @@
                 font-size: 1.2em;
             }
 
-            color: $red;
+            color: $green;
         }
     }
 }

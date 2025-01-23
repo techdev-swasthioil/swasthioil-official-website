@@ -1,8 +1,8 @@
-@import '../color.scss';
-@import '../assets/fonts/fonts.scss';
+@import '../../color.scss';
+@import '../../assets/fonts/fonts.scss';
 
 .message_container {
-    background-color: $red_semi;
+    background-color: $green_semi;
     width: 100%;
     padding: 20px;
     display: flex;
@@ -17,7 +17,6 @@
         flex-direction: column;
         width: 50%;
         align-items: center;
-        // justify-content: space-around;
 
         @media screen and (max-width: 1023px) {
             flex-direction: row;
@@ -245,7 +244,7 @@
                     justify-content: center;
 
                     .MuiButtonBase-root {
-                        background-color: $red;
+                        background-color: $green;
                     }
                 }
             }

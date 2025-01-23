@@ -1,0 +1,126 @@
+@import '../../color.scss';
+@import '../../assets/fonts/fonts.scss';
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: $green;
+    font-family: GillSans;
+    background-color: $white;
+
+    .MuiStack-root {
+        display: flex;
+
+        @media screen and (max-width: 1440px) {
+            width: 30vw;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 40vw;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 40vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 60vw;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 80vw;
+        }
+
+        .MuiTypography-root {
+            color: $green;
+            font-size: 1.4em;
+            font-family: GillSans;
+        }
+
+        .logo {
+            display: flex;
+            height: 120px;
+            padding: 1%;
+
+            @media screen and (max-width: 991px) {
+                height: 110px;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 100px;
+            }
+
+            @media screen and (max-width: 576px) {
+                height: 90px;
+            }
+
+        }
+
+        .MuiFormControl-root {
+            display: flex;
+            width: 100%;
+
+            .MuiFormLabel-root {
+                font-family: GillSans;
+                color: $green;
+                font-size: 1.0em;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.9em;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 0.9em;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 0.8em;
+                }
+            }
+
+            .MuiInputBase-root {
+                font-family: GillSans;
+                font-size: 1.0em;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.9em;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 0.9em;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 0.8em;
+                }
+            }
+
+            .MuiButtonBase-root {
+                background-color: transparent;
+            }
+        }
+
+        .forgot_pass {
+            display: flex;
+            justify-content: flex-end;
+
+            .MuiLink-root {
+                font-family: GillSans;
+                text-decoration: none;
+                color: $green;
+                font-size: 12px;
+                font-family: GillSans;
+            }
+        }
+
+        .MuiButtonBase-root {
+            display: flex;
+            font-family: GillSans;
+            background-color: $green ;
+            width: 100%;
+        }
+    }
+}

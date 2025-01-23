@@ -1,7 +1,7 @@
 import React from "react";
 import './oil-product.scss';
-import img from '../assets/images/070A2826.png';
-import nf from '../assets/images/nutritionalfacts.jpg';
+import img from '../../assets/images/070A2826.png';
+import nf from '../../assets/images/nutritionalfacts.jpg';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Typography } from "@mui/material";
 

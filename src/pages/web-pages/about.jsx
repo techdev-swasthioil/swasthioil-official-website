@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '@mui/material';
-import k_img from '../assets/images/Kateel.jpg';
+import k_img from '../../assets/images/Kateel.jpg';
 import './about.scss';
 
 function About() {
@@ -95,7 +95,7 @@ function About() {
         <div className='k_description'>
           <div className='k_mid'>
             <div className='k_image'>
-              <img className='k_img' src={k_img} />
+              <img className='k_img' src={k_img} alt='Kateel Shri Durgaparameshwari'/>
               </div>
             <Typography>Kateel Shri Durgaparameshwari</Typography>
           </div>

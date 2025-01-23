@@ -1,12 +1,12 @@
 import React from "react";
 import './oil-product.scss';
-import img from '../assets/images/070A2859.png';
-import img1 from '../assets/images/070A2870.png';
-import nf from '../assets/images/nutritionalfacts.jpg';
+import img from '../../assets/images/070A2835.png';
+import img1 from '../../assets/images/070A2852.png';
+import nf from '../../assets/images/nutritionalfacts.jpg';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Typography } from "@mui/material";
 
-function Oil1LP() {
+function Oil05LP() {
     let items = [
         {
             productImg: img,
@@ -51,8 +51,8 @@ function Oil1LP() {
             <div className="product-description">
                 <div className="product-title">
                     <Typography>
-                        Swasthi Cold Press Coconut Oil 1L Pouch <br/>
-                        <span>-12.5%</span> ₹ 350.00<br/><div className="mrp">MRP:₹ 400.00</div> 
+                        Swasthi Cold Press Coconut Oil 0.5L Pouch <br/>
+                        <span>-12.5%</span> ₹ 175.00<br/><div className="mrp">MRP:₹ 200.00</div> 
                     </Typography>
                 </div>
                 <div className="product-details">
@@ -70,7 +70,7 @@ function Oil1LP() {
                                 Speciality
                             </div>
                             <div className="values">
-                                1000 Mililitres (1 Litre)<br/>
+                                500 Mililitres<br/>
                                 Cold pressed,Unrefined<br/>
                                 Traditional Rotary Machine<br/>
                                 Natural,GMO free,Gluten free,Vegan
@@ -108,4 +108,4 @@ function Oil1LP() {
     );
 }
 
-export default Oil1LP;
+export default Oil05LP;

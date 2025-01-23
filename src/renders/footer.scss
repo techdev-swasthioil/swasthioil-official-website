@@ -2,10 +2,10 @@
 @import '../assets/fonts/fonts.scss';
 
 .footer_container{
-    background-color: $red;
+    background-color: $green;
     .MuiBox-root{
         .footer_divider{
-            background-color: $red_semi;
+            background-color: $green_semi;
             margin: 1px 15px;
         }
         .top_container{
@@ -110,7 +110,7 @@
                 .list_title{
                     font-family: GillSans-Medium;
                     font-size: 0.9em;
-                    color: $red_semi;
+                    color: $green_semi;
                     @media screen and (max-width: 670px) {
                         text-align: center;
                     }
@@ -137,7 +137,7 @@
                                 font-size: 0.9em;
                                 color: $white;
                                 &:hover{
-                                    color: $red_semi;
+                                    color: $green_semi;
                                 }
                                 
                             }
@@ -160,7 +160,7 @@
                 .list_title{
                     font-family: GillSans-Medium;
                     font-size: 0.9em;
-                    color: $red_semi;
+                    color: $green_semi;
                     @media screen and (max-width: 670px) {
                         text-align: center;
                     }
@@ -183,14 +183,14 @@
                                 font-size: 0.9em;
                                 color: $white;
                                 &:hover{
-                                    color: $red_semi;
+                                    color: $green_semi;
                                 }
                                 
                             }
                             &.active{
                                 .MuiTypography-root{
                                     font-family: GillSans-Bold;
-                                    color: $red_semi;
+                                    color: $green_semi;
                                 }
                             }
                         }
