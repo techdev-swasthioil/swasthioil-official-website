@@ -16,7 +16,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { Outlet } from 'react-router-dom';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
@@ -25,6 +25,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import './DashboardLayout.scss';
 
 const drawerWidth = 240;
@@ -38,18 +39,18 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
             duration: theme.transitions.duration.leavingScreen,
         }),
         marginLeft: `-${drawerWidth}px`,
-        variants: [
-            {
-                props: ({ open }) => open,
-                style: {
-                    transition: theme.transitions.create('margin', {
-                        easing: theme.transitions.easing.easeOut,
-                        duration: theme.transitions.duration.enteringScreen,
-                    }),
-                    marginLeft: 0,
-                },
-            },
-        ],
+        // variants: [
+        //     {
+        //         props: ({ open }) => open,
+        //         style: {
+        //             transition: theme.transitions.create('margin', {
+        //                 easing: theme.transitions.easing.easeOut,
+        //                 duration: theme.transitions.duration.enteringScreen,
+        //             }),
+        //             marginLeft: 0,
+        //         },
+        //     },
+        // ],
     }),
 );
 
@@ -64,8 +65,8 @@ const AppBar = styled(MuiAppBar, {
         {
             props: ({ open }) => open,
             style: {
-                width: `calc(100% - ${drawerWidth}px)`,
-                marginLeft: `${drawerWidth}px`,
+                // width: `calc(100% - ${drawerWidth}px)`,
+                // marginLeft: `${drawerWidth}px`,
                 transition: theme.transitions.create(['margin', 'width'], {
                     easing: theme.transitions.easing.easeOut,
                     duration: theme.transitions.duration.enteringScreen,
@@ -88,7 +89,6 @@ function DashboardLayout() {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
     const navigate = useNavigate();
-    const location = useLocation();
 
     const menuItems = [
         { item: 'Dashboard', navigateTo: 'dashboard', icon: <DashboardIcon /> },
@@ -97,7 +97,9 @@ function DashboardLayout() {
         { item: 'Orders', navigateTo: 'orders', icon: <ReceiptLongIcon /> },
         { item: 'Staff Management', navigateTo: 'staffs', icon: <AccountBoxIcon /> },
         { item: 'Inventory', navigateTo: 'inventory', icon: <InventoryIcon /> },
-        { item: 'Billing', navigateTo: 'billing', icon: <ReceiptLongIcon/> }
+        { item: 'Billing', navigateTo: 'billing', icon: <ReceiptLongIcon/> },
+        { item: 'Cashflow', navigateTo: 'cashflow', icon: <AccountBalanceIcon/> },
+        { item: 'Expenses', navigateTo: 'expenses', icon: <CurrencyRupeeIcon/> },
     ]
 
 
@@ -129,7 +131,7 @@ function DashboardLayout() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Dashboard 
+                       Sri Janardana Oil Mill
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -161,6 +163,7 @@ function DashboardLayout() {
                             <ListItemButton
                                 onClick={() => {
                                     navigate(items.navigateTo);
+                                    handleDrawerClose();
                                 }
                                 }
                                 sx={{
@@ -186,36 +189,6 @@ function DashboardLayout() {
                         </ListItem>
                     </List>
                 ))}
-                <Divider />
-                <List>
-                    <ListItem disablePadding sx={{ display: "block" }}>
-                        <ListItemButton
-                            onClick={() => {
-                                navigate('cashflow');
-                            }
-                            }
-                            sx={{
-                                minHeight: 48,
-                                justifyContent: open ? "initial" : "center",
-                                px: 2.5,
-                            }}
-                        >
-                            <ListItemIcon
-                                sx={{
-                                    minWidth: 0,
-                                    mr: open ? 3 : "auto",
-                                    justifyContent: "center",
-                                }}
-                            >
-                                <AccountBalanceIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary='Cash Flow'
-                                sx={{ opacity: open ? 1 : 0 }}
-                            />
-                        </ListItemButton>
-                    </ListItem>
-                </List>
             </Drawer>
             <Main open={open}>
                 <DrawerHeader />

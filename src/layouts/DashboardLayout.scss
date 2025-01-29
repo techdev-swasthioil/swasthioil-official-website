@@ -15,18 +15,18 @@
             .MuiTypography-root {
                 color: $green;
                 font-size: 1.4em;
-                font-family: GillSans;
+                font-family: Poppins-Regular;
 
                 @media screen and (max-width: 991px) {
                     font-size: 1.2em;
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 1.0em;
+                    font-size: 1.1em;
                 }
 
                 @media screen and (max-width: 576px) {
-                    font-size: 0.9em;
+                    font-size: 1.0em;
                 }
 
             }
@@ -36,7 +36,7 @@
     .MuiDrawer-root {
         .MuiPaper-root {
             .MuiList-root {
-                font-family: GillSans;
+                font-family: Poppins-Regular;
                 color: $green;
 
                 .MuiButtonBase-root {
@@ -47,31 +47,33 @@
                     }
 
                     .MuiListItemText-root {
-                        .MuiTypography-root{
-                        font-size: 1.0em;
-                        color: $green;
-                        font-family: GillSans;
+                        .MuiTypography-root {
+                            font-size: 1.0em;
+                            color: $green;
+                            font-family: Poppins-Regular;
 
-                        @media screen and (max-width: 991px) {
-                            font-size: 0.9em;
-                        }
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.9em;
+                            }
 
-                        @media screen and (max-width: 768px) {
-                            font-size: 0.8em;
-                        }
+                            @media screen and (max-width: 768px) {
+                                font-size: 0.8em;
+                            }
 
-                        @media screen and (max-width: 576px) {
-                            font-size: 0.7em;
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.8em;
+                            }
                         }
                     }
-                    }
-                    &.Mui-selected{
+
+                    &.Mui-selected {
                         background-color: $green_semi;
-                        .MuiListItemText-root{
-                            .MuiTypography-root{
+
+                        .MuiListItemText-root {
+                            .MuiTypography-root {
                                 color: $green;
-                                font-family: GillSans-Medium;
-                                text-decoration:none;
+                                font-family: Poppins-Regular;
+                                text-decoration: none;
                             }
                         }
                     }

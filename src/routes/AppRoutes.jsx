@@ -19,7 +19,8 @@ import Orders from "../pages/management/orders.jsx";
 import Staffs from "../pages/management/staffs.jsx";
 import Inventory from "../pages/management/inventory.jsx";
 import CashFlow from "../pages/management/cashflow.jsx";
-import Billing from "../pages/management/billing.jsx"
+import Billing from "../pages/management/billing.jsx";
+import Expenses from "../pages/management/expenses.jsx"
 
 const AppRoutes = (props) => {
     return(
@@ -43,7 +44,7 @@ const AppRoutes = (props) => {
                         <DashboardLayout />
                     </PrivateRoute>
                 }>
-                    <Route path='' element={<Navigate to="/admin" />} />
+                    <Route path='' element={<Navigate to="/admin/dashboard" />} />
                     <Route path='dashboard' element={<Dashboard/>}/>
                     <Route path="productManagement" element={<ProductManagement/>}/>
                     <Route path="customers" element={<Customers/>}/>
@@ -52,7 +53,7 @@ const AppRoutes = (props) => {
                     <Route path="inventory" element={<Inventory/>}/>
                     <Route path="billing" element={<Billing/>}/>
                     <Route path="cashflow" element={<CashFlow/>}/>
-
+                    <Route path="expenses" element={<Expenses/>}/>
                 </Route>
             </Routes>
         </>

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Typography } from '@mui/material';
+import './cashflow.scss';
 
-function CashFlow() {
+function Cashflow() {
   return (
-    <div>cashflow</div>
+    <div className='cashflow_container'>
+      <div className='title_container'>
+        <Typography component='div'>Cashflow</Typography>
+      </div>
+    </div>
   )
 }
 
-export default CashFlow;
+export default Cashflow
