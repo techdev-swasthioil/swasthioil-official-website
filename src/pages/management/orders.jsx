@@ -71,10 +71,10 @@ function OrderTable({ orders }) {
       <Table>
         <TableHead>
           <TableRow>
-            {/* <TableCell>Order ID</TableCell> */}
-            <TableCell>Customer</TableCell>
+            <TableCell>ID</TableCell>
+            <TableCell>Customer</TableCell> 
+            <TableCell>Date</TableCell>
             <TableCell>Status</TableCell>
-            <TableCell align='right'>Amount</TableCell>
             <TableCell align='center'>Details</TableCell>
           </TableRow>
         </TableHead>
@@ -82,10 +82,10 @@ function OrderTable({ orders }) {
           {orders.length > 0 ? (
             orders.map((order) => (
               <TableRow key={order.id}>
-                {/* <TableCell>{order.id}</TableCell> */}
+                <TableCell>{order.id}</TableCell>
                 <TableCell>{order.name}</TableCell>
+                <TableCell>{order.date}</TableCell>
                 <TableCell>{getStatusChip(order.status)}</TableCell>
-                <TableCell align='right'>{order.amount}</TableCell>
                 <TableCell align='center'>
                   <Button
                     variant='contained'
@@ -127,18 +127,23 @@ function Orders() {
 
   // Sample order data
   const orders = [
-    { id: 1, name: 'Laksmi Venkatesh', status: 'In Process', amount: '10000' },
-    { id: 2, name: 'Ramachandra Stores', status: 'In Process', amount: '12000' },
-    { id: 3, name: 'Mahadevi', status: 'Delivered', amount: '15000' },
-    { id: 4, name: 'Laksmi Venkatesh', status: 'In Process', amount: '2500' },
-    { id: 5, name: 'Sai Palace', status: 'Delivered', amount: '43000' },
+    { id: 1, name: 'Laksmi Venkatesh',date:'10/02/2025', status: 'In Process'},
+    { id: 2, name: 'Ramachandra Stores',date:'09/02/2025', status: 'In Process'},
+    { id: 3, name: 'Mahadevi',date:'05/02/2025', status: 'Delivered'},
+    { id: 4, name: 'Laksmi Venkatesh',date:'03/02/2025', status: 'In Process'},
+    { id: 5, name: 'Sai Palace',date:'01/02/2025', status: 'Delivered'},
   ];
 
   const customers = ['Lakshmi Venkatesh', 'Ramachandra Stores', 'Sai Palace', 'Mahadevi'];
   const products = ['Coconut Oil 1L Bottle', 'Coconut Oil 0.5L Bottle', 'Coconut Oil 1L Pouch', 'Coconut Oil 0.5L Pouch', 'Coconut Oil 5L Can', 'Pooja Oil 1L Bottle', 'Pooja Oil 0.5L Bottle', 'Pooja Oil 1L Pouch', 'Pooja Oil 0.5L Pouch', 'Tilamshu 0.5L Pouch'];
 
-  // Function to add a product field
+  const handleProductChange = (index, field, value) => {
+    const updatedList = [...productsList];
+    updatedList[index][field] = value;
+    setProductsList(updatedList);
+  };
 
+  // Function to add a product field
   const addProductField = () => {
     setProductsList([...productsList, { id: productsList.length + 1, product: "", quantity: "" }]);
   };
@@ -198,8 +203,8 @@ function Orders() {
         <div className="product_selection">
           <Typography component="div">Products :</Typography>
           <div className="headers_prompt">
-            <Typography className="item_name">Item Name</Typography>
-            <Typography className="quantity">Quantity</Typography>
+            <Typography className="item_name">Item</Typography>
+            <Typography className="quantity">Qty</Typography>
           </div>
 
           {productsList.map((item, index) => (
@@ -208,19 +213,25 @@ function Orders() {
               <Autocomplete
                 freeSolo
                 options={products}
+                value={item.product}
+                onChange={(event, newValue) => handleProductChange(index, "product", newValue)}
                 renderInput={(params) => (
                   <TextField {...params} placeholder="Select Product" variant="outlined" />
                 )}
               />
-              <TextField type="number" variant="outlined" id={`quantity-${index}`} />
-              <IconButton
-                onClick={() => deleteProductField(index)}
-              >
+              <TextField
+                type="number"
+                variant="outlined"
+                id={`quantity-${index}`}
+                value={item.quantity}
+                onChange={(e) => handleProductChange(index, "quantity", e.target.value)}
+              />
+              <IconButton onClick={() => deleteProductField(index)}>
                 <DeleteIcon />
               </IconButton>
             </div>
           ))}
-          {/* Add Product Button */}
+
           <div className="adder_button">
             <IconButton onClick={addProductField}>
               <AddIcon />
@@ -228,12 +239,12 @@ function Orders() {
           </div>
         </div>
         {/* Submit Button */}
-        <Button 
-        variant="contained"
-        className='add'
-        onClick={()=>{
-          setAddOrder(false);
-        }}>
+        <Button
+          variant="contained"
+          className='add'
+          onClick={() => {
+            setAddOrder(false);
+          }}>
           Add
         </Button>
       </div>

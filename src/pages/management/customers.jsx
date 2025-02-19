@@ -125,7 +125,7 @@ function Customers() {
                   <TableCell>Name</TableCell>
                   <TableCell className='credit' align='right'>Credit</TableCell>
                   <TableCell className='debit' align='right'>Debit</TableCell>
-                  <TableCell align='center'>History</TableCell>
+                  <TableCell align='center'>Details</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>

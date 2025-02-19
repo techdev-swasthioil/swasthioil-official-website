@@ -90,23 +90,29 @@
             @media screen and (max-width: 991px) {
                 font-size: 0.8em;
             }
-
-            @media screen and (max-width: 768px) {
-                font-size: 0.8em;
-            }
-
-            @media screen and (max-width: 576px) {
-                font-size: 0.7em;
-            }
         }
 
         .customer_selector {
             width: 100%;
 
+            .MuiTypography-root {
+                font-family: Poppins-Regular;
+                color: $green;
+                margin: 2%;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.9em;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 0.8em;
+                }
+
+            }
+
             .MuiFormControl-root {
                 display: flex;
                 width: 300px;
-                margin: 1%;
+                margin: 2%;
                 background-color: $white;
 
                 .MuiFormLabel-root {
@@ -132,12 +138,8 @@
                         font-size: 0.8em;
                     }
 
-                    @media screen and (max-width: 768px) {
-                        font-size: 0.8em;
-                    }
-
                     @media screen and (max-width: 576px) {
-                        font-size: 0.7em;
+                        font-size: 0.8em;
                     }
                 }
 
@@ -150,13 +152,20 @@
         .product_selection {
             display: flex;
             width: 100%;
-            background-color: #104d57c3;
-            flex-direction: column;
             padding: 2%;
+            background-color: #84b1b75b;
+            flex-direction: column;
 
             .MuiTypography-root {
-                display: flex;
-                color: $white;
+                font-family: Poppins-Regular;
+                color: $green;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.9em;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 0.8em;
+                }
             }
 
             .headers_prompt {
@@ -167,34 +176,47 @@
                 .item_name {
                     display: flex;
                     justify-content: center;
-                    width: 65%;
-                    color: $white;
-                    margin-right: 2%;
+                    width: 70%;
+                    color: $green;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
                 }
 
                 .quantity {
                     display: flex;
                     justify-content: center;
-                    color: $white;
+                    color: $green;
                     width: 20%;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
                 }
             }
 
             .fields {
                 display: flex;
                 width: 100%;
+                padding: 1%;
                 flex-direction: row;
 
                 .MuiTypography-root {
                     display: flex;
-                    color: $white;
                     width: 5%;
                     align-items: center;
                 }
 
                 .MuiAutocomplete-root {
                     width: 65%;
-                    margin-right: 2%;
+                    padding-right: 2%;
 
                     .MuiFormControl-root {
                         width: 100%;
@@ -245,7 +267,7 @@
 
                 .MuiIconButton-root {
                     display: flex;
-                    color: $white;
+                    color: $green;
                     background-color: transparent;
                 }
             }
@@ -263,7 +285,7 @@
             }
         }
 
-        .add{
+        .add {
             display: flex;
             background-color: $green;
             color: $white;
@@ -328,10 +350,7 @@
         .fields {
             display: flex;
             flex-direction: row;
-
-            @media screen and (max-width:576px) {
-                flex-direction: column;
-            }
+            margin: 2%;
 
             .MuiFormControl-root {
                 display: flex;

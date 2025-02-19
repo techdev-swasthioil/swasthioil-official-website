@@ -4,7 +4,7 @@
 .billing_container {
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
+    width: 90vw;
     justify-self: center;
     font-size: 1.4em;
     font-family: Poppins-Regular;
@@ -27,9 +27,610 @@
         margin-bottom: 2%;
 
         .MuiTypography-root {
+            width: 50%;
             color: $green;
             font-family: inherit;
             font-size: inherit;
+        }
+
+        .mode_switch {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+
+            .switch {
+                display: flex;
+                font-family: inherit;
+                text-transform: none;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.8em;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 0.7em;
+                }
+
+                &.on {
+                    background-color: $green;
+                    color: $white;
+                }
+
+                &.off {
+                    background-color: $white;
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .sales_container {
+        display: flex;
+        width: 100%;
+
+        .MuiBox-root {
+            width: 100%;
+            justify-content: center;
+
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+            }
+
+            .invoice_inputs {
+                display: flex;
+                width: 50%;
+                height: fit-content;
+                flex-direction: column;
+                align-items: center;
+                background-color: $green_semi;
+
+                @media screen and (max-width: 991px) {
+                    width: 100%;
+                }
+
+                .customer_selector {
+                    width: 100%;
+
+                    .MuiTypography-root {
+                        font-family: Poppins-Regular;
+                        color: $green;
+                        margin: 2%;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.9em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.8em;
+                        }
+
+                    }
+
+                    .MuiFormControl-root {
+                        display: flex;
+                        width: 60%;
+                        margin: 2%;
+                        background-color: $white;
+
+                        .MuiFormLabel-root {
+                            font-family: Poppins-Regular;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+
+                        .MuiInputBase-root {
+                            font-family: Poppins-Regular;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.8em;
+                            }
+                        }
+
+                        .MuiButtonBase-root {
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+                .order_selector {
+                    width: 100%;
+
+                    .MuiTypography-root {
+                        font-family: Poppins-Regular;
+                        color: $green;
+                        margin: 2%;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.9em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.8em;
+                        }
+
+                    }
+
+                    .MuiFormControl-root {
+                        display: flex;
+                        width: 30%;
+                        margin: 2%;
+                        background-color: $white;
+
+                        .MuiFormLabel-root {
+                            font-family: Poppins-Regular;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+
+                        .MuiInputBase-root {
+                            font-family: Poppins-Regular;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.8em;
+                            }
+                        }
+
+                        .MuiButtonBase-root {
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+                .product_selection {
+                    display: flex;
+                    width: 100%;
+                    padding: 2%;
+                    background-color: #84b1b75b;
+                    flex-direction: column;
+
+                    .MuiTypography-root {
+                        font-family: Poppins-Regular;
+                        color: $green;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.9em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.8em;
+                        }
+                    }
+
+                    .headers_prompt {
+                        display: flex;
+                        width: 100%;
+                        padding: 1%;
+                        flex-direction: row;
+
+                        .item_name {
+                            display: flex;
+                            justify-content: center;
+                            width: 60%;
+                            padding-right: 2%;
+                            color: $green;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+
+                        .quantity {
+                            display: flex;
+                            color: $green;
+                            width: 15%;
+                            margin-right: 1%;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+
+                        .price {
+                            display: flex;
+                            margin-right: 1%;
+                            color: $green;
+                            width: 15%;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+
+                    .fields {
+                        display: flex;
+                        width: 100%;
+                        padding: 1%;
+                        flex-direction: row;
+
+                        .MuiTypography-root {
+                            display: flex;
+                            width: 3%;
+                            align-items: center;
+                        }
+
+                        .MuiAutocomplete-root {
+                            width: 57%;
+                            padding-right: 2%;
+
+                            .MuiFormControl-root {
+                                width: 100%;
+                            }
+                        }
+
+                        .MuiFormControl-root {
+                            display: flex;
+                            width: 15%;
+                            background-color: $white;
+                            margin-right: 1%;
+
+                            .MuiFormLabel-root {
+                                font-family: Poppins-Regular;
+
+                                @media screen and (max-width: 991px) {
+                                    font-size: 0.8em;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                    font-size: 0.8em;
+                                }
+
+                                @media screen and (max-width: 576px) {
+                                    font-size: 0.7em;
+                                }
+                            }
+
+                            .MuiInputBase-root {
+                                font-family: Poppins-Regular;
+
+                                @media screen and (max-width: 991px) {
+                                    font-size: 0.8em;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                    font-size: 0.8em;
+                                }
+
+                                @media screen and (max-width: 576px) {
+                                    font-size: 0.7em;
+                                }
+                            }
+
+                            .MuiButtonBase-root {
+                                background-color: transparent;
+                            }
+                        }
+
+                        .MuiIconButton-root {
+                            display: flex;
+                            color: $green;
+                            background-color: transparent;
+                        }
+                    }
+
+                    .adder_button {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin: 2%;
+
+                        .MuiIconButton-root {
+                            display: flex;
+                            background-color: $white;
+                            color: $green;
+                        }
+                    }
+                }
+
+                .generate_button {
+                    display: flex;
+                    margin: 2%;
+
+                    .MuiButtonBase-root {
+                        background-color: $green;
+                        color: $white;
+                        font-family: inherit;
+                        text-transform: none;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+
+            .invoice_preview {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                min-height: fit-content; // Full height
+                width: 50%;
+
+                @media screen and (max-width: 991px) {
+                    width: 100%;
+                }
+
+                .invoice_actions {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 2%;
+
+                    .confirm_bill {
+                        display: flex;
+                        margin: 1%;
+
+                        .MuiButtonBase-root {
+                            background-color: $green;
+                            color: $white;
+                            font-family: Poppins-Regular;
+                            text-transform: none;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+
+                    .download_bill {
+                        display: flex;
+                        margin: 1%;
+
+                        .MuiButtonBase-root {
+                            background-color: $green;
+                            color: $white;
+                            font-family: inherit;
+                            text-transform: none;
+
+                            @media screen and (max-width: 991px) {
+                                font-size: 0.8em;
+                            }
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .purchase_container {
+        display: flex;
+        width: 50%;
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        .product_selection {
+            display: flex;
+            width: 100%;
+            padding: 2%;
+            background-color: #84b1b75b;
+            flex-direction: column;
+
+            .MuiTypography-root {
+                font-family: Poppins-Regular;
+                color: $green;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 0.9em;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 0.8em;
+                }
+            }
+
+            .headers_prompt {
+                display: flex;
+                width: 100%;
+                padding: 1%;
+                flex-direction: row;
+
+                .item_name {
+                    display: flex;
+                    justify-content: center;
+                    width: 60%;
+                    padding-right: 2%;
+                    color: $green;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
+                }
+
+                .quantity {
+                    display: flex;
+                    color: $green;
+                    width: 15%;
+                    margin-right: 1%;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    margin-right: 1%;
+                    color: $green;
+                    width: 15%;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+
+            .fields {
+                display: flex;
+                width: 100%;
+                padding: 1%;
+                flex-direction: row;
+
+                .MuiTypography-root {
+                    display: flex;
+                    width: 3%;
+                    align-items: center;
+                }
+
+                .MuiAutocomplete-root {
+                    width: 57%;
+                    padding-right: 2%;
+
+                    .MuiFormControl-root {
+                        width: 100%;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    display: flex;
+                    width: 15%;
+                    background-color: $white;
+                    margin-right: 1%;
+
+                    .MuiFormLabel-root {
+                        font-family: Poppins-Regular;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.7em;
+                        }
+                    }
+
+                    .MuiInputBase-root {
+                        font-family: Poppins-Regular;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 0.8em;
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 0.7em;
+                        }
+                    }
+
+                    .MuiButtonBase-root {
+                        background-color: transparent;
+                    }
+                }
+
+                .MuiIconButton-root {
+                    display: flex;
+                    color: $green;
+                    background-color: transparent;
+                }
+            }
+
+            .adder_button {
+                display: flex;
+                justify-content: flex-end;
+                margin: 2%;
+
+                .MuiIconButton-root {
+                    display: flex;
+                    background-color: $white;
+                    color: $green;
+                }
+            }
+
+            .confirm_purchase {
+                display: flex;
+                margin: 1%;
+                justify-content: center;
+
+                .MuiButtonBase-root {
+                    background-color: $green;
+                    color: $white;
+                    font-family: inherit;
+                    text-transform: none;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 0.8em;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 0.7em;
+                    }
+                }
+            }
         }
     }
 }
